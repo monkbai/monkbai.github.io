@@ -1,7 +1,8 @@
 ---
 title: "Professional Service"
-collection: teaching
+collection: service
 permalink: /teaching/2020-spring-service
+read_more: enabled
 location: "Hong Kong, China"
 ---
 
