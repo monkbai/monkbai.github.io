@@ -4,6 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2020-spring-teaching
 venue: "HKUST, Department of CSE"
+read_more: enabled
 date: 2020-01-01
 location: "Hong Kong, China"
 ---
