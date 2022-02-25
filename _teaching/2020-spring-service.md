@@ -1,9 +1,7 @@
 ---
 title: "Professional Service"
 collection: teaching
-type: "Workshop"
 permalink: /teaching/2020-spring-service
-date: 2020-01-01
 location: "Hong Kong, China"
 ---
 
