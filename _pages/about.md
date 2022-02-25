@@ -16,11 +16,12 @@ Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianji
 My research currently focuses on **Reverse Engineering**, my research interests include **Computer Security** and **Software Engineering**.
 
 Education
-======
+------
 **Ph.D.**, Hong Kong University of Science and Technology &emsp; *Sept 2019 - Now*
 
 **Bachelor of Engineering**, Nankai University &emsp; &emsp; &emsp; &emsp; &emsp; *Sept 2015 - June 2019*
 
+<!--
 Academic Projects
 ======
 **DNN Executable Decompilation**, &emsp; *Jan 2021 - Now*
@@ -31,6 +32,7 @@ Academic Projects
 
 **Decompiler Testing**, ISSTA 2020 &emsp; *Jan 2019 - Mar 2020*
  * We design a framework to automatically find errors and defects in modern decmopilers including commercial decompiler and open-source decompiler developed by NSA.
+-->
 
 Awards & Honors
 ------
