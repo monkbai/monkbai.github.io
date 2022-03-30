@@ -9,7 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-[My Resume (updated in July 2021)](https://github.com/monkbai/monkbai.github.io/blob/master/files/Resume_July_2021.pdf)
+<!--- [My Resume (updated in July 2021)](https://github.com/monkbai/monkbai.github.io/blob/master/files/Resume_July_2021.pdf) -->
+
+[My Resume (updated in March 2022)](https://github.com/monkbai/monkbai.github.io/blob/master/files/resume_Mar_2022.pdf)
 
 <!---
 Education
