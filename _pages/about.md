@@ -38,7 +38,7 @@ Awards & Honors
 ------
 **2019** &emsp; China National Cyber Security Scholarship
 
-**2019** &emsp; CISCN CTF Contest, group second class prize
+**2019** &emsp; Chain National College Information Security Contest (CISCN CTF Contest), group second class prize
 
 **2018** &emsp; CISCN CTF Contest, group second class prize
 
