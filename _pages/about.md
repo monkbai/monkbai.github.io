@@ -52,3 +52,5 @@ Technical Skills
 
 
 Latest Updated in Feb. 2022
+
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script>
