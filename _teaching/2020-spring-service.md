@@ -6,6 +6,8 @@ read_more: enabled
 location: "Hong Kong, China"
 ---
 
+ * OSDI'22 + ATC'22 Artifact Evaluation Committee
+
  * WiSec 2022 Artifact Evaluation track, programm committee
 
  * NDSS BAR workshop 2022 External reviewer
