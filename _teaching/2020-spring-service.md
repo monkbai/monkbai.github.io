@@ -7,7 +7,7 @@ location: "Hong Kong, China"
 ---
  * IEEE S&P'23 External reviewer
 
- * ISSTA'22 Artifact Evaluation Committee
+ * ISSTA'22 Artifact Evaluation-track，Committee Member
 
  * OSDI'22 + ATC'22 Artifact Evaluation Committee
 
