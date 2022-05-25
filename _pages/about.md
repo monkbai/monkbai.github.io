@@ -48,7 +48,7 @@ Technical Skills
 ------
 **Programming/Scripting** &emsp; Python, Java, C/C++, x86/64 Assembly
 
-**Others** &emsp; Reverse Engineering, Vulnerability Explotation
+**Others** &emsp; Reverse Engineering, Vulnerability Exploitation
 
 
 Latest Updated in Feb. 2022
