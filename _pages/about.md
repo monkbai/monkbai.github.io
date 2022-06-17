@@ -53,4 +53,6 @@ Technical Skills
 
 Latest Updated in Feb. 2022
 
-<a href="https://clustrmaps.com/site/1bnpl" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff" style="display: none;"></a>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script>
+
+<!-- <a href="https://clustrmaps.com/site/1bnpl" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff" style="display: none;"></a> -->
