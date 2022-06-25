@@ -36,6 +36,8 @@ Academic Projects
 
 Awards & Honors
 ------
+**2022** &emsp; HKUST RedBird Academic Excellence Award
+
 **2019** &emsp; China National Cyber Security Scholarship
 
 **2019** &emsp; Chain National College Information Security Contest (CISCN CTF Contest), group second class prize
