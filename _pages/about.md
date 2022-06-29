@@ -36,9 +36,9 @@ Academic Projects
 
 Awards & Honors
 ------
-**2022** &emsp; HKUST RedBird Academic Excellence Award
+**2022** &emsp; HKUST RedBird Academic Excellence Award (20,000 HKD)
 
-**2019** &emsp; China National Cyber Security Scholarship
+**2019** &emsp; China National Cyber Security Scholarship (30,000 CNY)
 
 **2019** &emsp; Chain National College Information Security Contest (CISCN CTF Contest), group second class prize
 
@@ -53,7 +53,7 @@ Technical Skills
 **Others** &emsp; Reverse Engineering, Vulnerability Exploitation
 
 
-Latest Updated in Feb. 2022
+Latest Updated in June 2022
 
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script>
 
