@@ -5,11 +5,13 @@ permalink: /teaching/2020-spring-service
 read_more: enabled
 location: "Hong Kong, China"
 ---
+ * USENIX Security'23 External reviewer
+
+ * IEEE S&P'23 External reviewer
+
  * NeurIPS'22 External reviewer
 
  * ASE'22 External reviewer
-
- * IEEE S&P'23 External reviewer
 
  * ISSTA'22 Artifact Evaluation-track, Committee Member
 
