@@ -6,7 +6,7 @@ excerpt: ''
 date: 2022-05-26
 venue: 'IEEE S&P'
 paperurl: 'http://monkbai.github.io/files/sp-22.pdf'
-citation: 'Z. Liu, Y. Yuan, S. Wang and Y. Bao,  "SoK: Demystifying Binary Lifters Through the Lens of Downstream Applications," in 2022 2022 IEEE Symposium on Security and Privacy (SP) (SP), San Francisco, CA, US, 2022 pp. 453-472.'
+citation: 'Z. Liu, Y. Yuan, S. Wang and Y. Bao,  "SoK: Demystifying Binary Lifters Through the Lens of Downstream Applications," in 2022 IEEE Symposium on Security and Privacy (SP) (SP), San Francisco, CA, US, 2022 pp. 453-472.'
 ---
 
 [Download paper here](http://monkbai.github.io/files/sp-22.pdf)
