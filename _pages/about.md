@@ -36,6 +36,8 @@ Academic Projects
 
 Awards & Honors
 ------
+**2022** &emsp; HKUST Research Travel Grant
+
 **2022** &emsp; HKUST RedBird Academic Excellence Award (20,000 HKD)
 
 **2019** &emsp; China National Cyber Security Scholarship (30,000 CNY)
