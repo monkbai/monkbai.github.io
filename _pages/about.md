@@ -8,13 +8,17 @@ redirect_from:
   - /about.html
 ---
 <span style="font-family:Papyrus;">
-  Hi, this is Zhibo Liu's homepage.
+  Hi, this is Zhibo Liu's homepage.</span>  
 
-  I am currently a PhD year 4 student at Department of Computer Science and Engineering, Hong Kong University of Science and Technology, supervised by [Prof. Shuai Wang](https://www.cse.ust.hk/~shuaiw/).
-  Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianjin, China in 2019.
+<span style="font-family:Papyrus;">
+  I am currently a PhD year 4 student at Department of Computer Science and Engineering, Hong Kong University of Science and Technology, supervised by [Prof. Shuai Wang](https://www.cse.ust.hk/~shuaiw/).</span>  
+  
+<span style="font-family:Papyrus;">
+  Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianjin, China in 2019.</span>  
 
+<span style="font-family:Papyrus;">
   My research currently focuses on **Reverse Engineering**, my research interests include **Computer Security** and **Software Engineering**.
-</span>
+</span>  
 
 Education
 ------
