@@ -37,42 +37,42 @@ Academic Projects
 Publications
 ------
 
-#### USENIX Sec'23 
+### USENIX Sec'23 
 [**CacheQL: Quantifying and Localizing Cache Side-Channel Vulnerabilities in Production Software**](https://arxiv.org/abs/2209.14952)  
 Yuanyuan Yuan, **Zhibo Liu**, Shuai Wang.  
 *The Proceedings of the 32nd USENIX Security Symposium.*
 
-#### USENIX Sec'23 
+### USENIX Sec'23 
 [**Decompiling x86 Deep Neural Network Executables**](https://arxiv.org/abs/2210.01075) [[code](https://github.com/monkbai/DNN-decompiler)]  
 **Zhibo Liu**, Yuanyuan Yuan, Shuai Wang, Xiaofei Xie, Lei Ma.  
 *The Proceedings of the 32nd USENIX Security Symposium.*
 
-#### TSE 2022
+### TSE 2022
 [**Enhancing DNN-Based Binary Code Function Search With Low-Cost Equivalence Checking**](https://ieeexplore.ieee.org/document/9707874)   
 Huaijin Wang, Pingchuan Ma, Yuanyuan Yuan, **Zhibo Liu**, Shuai Wang, Qiyi Tang, Sen Nie, Shi Wu.  
 *IEEE Transactions on Software Engineering, 2022.*
 
-#### IEEE T-IFS, 2022 
+### IEEE T-IFS, 2022 
 [**NeuralD: Detecting Indistinguishability Violations of Oblivious RAM with Neural Distinguishers**](https://ieeexplore.ieee.org/document/9722877)  
 Pingchuan Ma, **Zhibo Liu**, Yuanyuan Yuan, and Shuai Wang.  
 *IEEE Transactions on Information Forensics and Security, 2022.*
 
-#### SIGMETRICS, 2022
+### SIGMETRICS, 2022
 [**Metamorphic Testing of Deep Learning Compilers**](https://dl.acm.org/doi/abs/10.1145/3508035)  
 Dongwei Xiao, **Zhibo Liu**, Yuanyuan Yuan, Qi Pang, and Shuai Wang.  
 *Proceedings of the ACM on Measurement and Analysis of Computing Systems, 2022.*
 
-#### IEEE S&P, 2022 
+### IEEE S&P, 2022 
 [**SoK: Demystifying Binary Lifters Through the Lens of Downstream Applications**](https://ieeexplore.ieee.org/document/9833799)   
 **Zhibo Liu**, Yuanyuan Yuan, Shuai Wang, Yuyan Bao.  
 *2022 IEEE Symposium on Security and Privacy (SP)*
 
-#### CCS, 2022 
+### CCS, 2022 
 [**Cache Refinement Type for Side-channel Detection of Cryptographic Software**](https://arxiv.org/abs/2209.04610)   
 Ke Jiang, Yuyan Bao, Shuai Wang, **Zhibo Liu**, Tianwei Zhang.  
 *the 29th ACM Conference on Computer and Communications Security (CCS), 2022*
 
-#### ISSTA, 2020 
+### ISSTA, 2020 
 [**How far we have come: testing decompilation correctness of C decompilers**](https://dl.acm.org/doi/10.1145/3395363.3397370) [[code](https://github.com/monkbai/DecFuzzer)]  
 **Zhibo Liu**, Shuai Wang.  
 *Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis*
