@@ -125,6 +125,6 @@ Technical Skills
 Latest Updated in Nov. 2022
 
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script> -->
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs'></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs'></script>
 
 <!-- <a href="https://clustrmaps.com/site/1bnpl" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff" style="display: none;"></a> -->
