@@ -1,24 +1,18 @@
 ---
 permalink: /
-title: <span style="font-family:Papyrus;">About me</span>
-excerpt: <span style="font-family:Papyrus;">About me</span>
+title: About me
+excerpt: About me
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-<span style="font-family:Papyrus;">
-  Hi, this is Zhibo Liu's homepage.</span>  
+Hi, this is Zhibo Liu's homepage.
 
-<span style="font-family:Papyrus;">
-  I am currently a PhD year 4 student at Department of Computer Science and Engineering, Hong Kong University of Science and Technology, supervised by [Prof. Shuai Wang](https://www.cse.ust.hk/~shuaiw/).</span>  
-  
-<span style="font-family:Papyrus;">
-  Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianjin, China in 2019.</span>  
+I am currently a PhD year 4 student at Department of Computer Science and Engineering, Hong Kong University of Science and Technology, supervised by [Prof. Shuai Wang](https://www.cse.ust.hk/~shuaiw/).
+  Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianjin, China in 2019.
 
-<span style="font-family:Papyrus;">
-  My research currently focuses on **Reverse Engineering**, my research interests include **Computer Security** and **Software Engineering**.
-</span>  
+My research currently focuses on **Reverse Engineering**, my research interests include **Computer Security** and **Software Engineering**.
 
 Education
 ------
@@ -39,6 +33,72 @@ Academic Projects
  * We design a framework to automatically find errors and defects in modern decmopilers including commercial decompiler and open-source decompiler developed by NSA.
 -->
 
+
+Publications
+------
+
+#### USENIX Sec'23 
+[**CacheQL: Quantifying and Localizing Cache Side-Channel Vulnerabilities in Production Software**](https://arxiv.org/abs/2209.14952)  
+Yuanyuan Yuan, **Zhibo Liu**, Shuai Wang.  
+*The Proceedings of the 32nd USENIX Security Symposium.*
+
+#### USENIX Sec'23 
+[**Decompiling x86 Deep Neural Network Executables**](https://arxiv.org/abs/2210.01075) [[code](https://github.com/monkbai/DNN-decompiler)]  
+**Zhibo Liu**, Yuanyuan Yuan, Shuai Wang, Xiaofei Xie, Lei Ma.  
+*The Proceedings of the 32nd USENIX Security Symposium.*
+
+#### TSE 2022
+[**Enhancing DNN-Based Binary Code Function Search With Low-Cost Equivalence Checking**](https://ieeexplore.ieee.org/document/9707874)   
+Huaijin Wang, Pingchuan Ma, Yuanyuan Yuan, **Zhibo Liu**, Shuai Wang, Qiyi Tang, Sen Nie, Shi Wu.  
+*IEEE Transactions on Software Engineering, 2022.*
+
+#### IEEE T-IFS, 2022 
+[**NeuralD: Detecting Indistinguishability Violations of Oblivious RAM with Neural Distinguishers**](https://ieeexplore.ieee.org/document/9722877)  
+Pingchuan Ma, **Zhibo Liu**, Yuanyuan Yuan, and Shuai Wang.  
+*IEEE Transactions on Information Forensics and Security, 2022.*
+
+#### SIGMETRICS, 2022
+[**Metamorphic Testing of Deep Learning Compilers**](https://dl.acm.org/doi/abs/10.1145/3508035)  
+Dongwei Xiao, **Zhibo Liu**, Yuanyuan Yuan, Qi Pang, and Shuai Wang.  
+*Proceedings of the ACM on Measurement and Analysis of Computing Systems, 2022.*
+
+#### IEEE S&P, 2022 
+[**SoK: Demystifying Binary Lifters Through the Lens of Downstream Applications**](https://ieeexplore.ieee.org/document/9833799)   
+**Zhibo Liu**, Yuanyuan Yuan, Shuai Wang, Yuyan Bao.  
+*2022 IEEE Symposium on Security and Privacy (SP)*
+
+#### CCS, 2022 
+[**Cache Refinement Type for Side-channel Detection of Cryptographic Software**](https://arxiv.org/abs/2209.04610)   
+Ke Jiang, Yuyan Bao, Shuai Wang, **Zhibo Liu**, Tianwei Zhang.  
+*the 29th ACM Conference on Computer and Communications Security (CCS), 2022*
+
+#### ISSTA, 2020 
+[**How far we have come: testing decompilation correctness of C decompilers**](https://dl.acm.org/doi/10.1145/3395363.3397370) [[code](https://github.com/monkbai/DecFuzzer)]  
+**Zhibo Liu**, Shuai Wang.  
+*Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis*
+
+Services
+------
+Artifact Evaluation Committee:
+ - 2023: USENIX Security
+ - 2022: ISSTA, OSDI, USENIX ATC, WiSec
+
+External Reviewer:
+ - 2023: IEEE S&P, NeurIPS
+ - 2022: ASE, NDSS BAR, CCS, AsiaCCS
+ - 2020: TIFS, ICICS, ICSE SEIP
+ - 2019: ICICS
+
+External Artifact Reviewer:
+ - 2020: ICSE
+ - 2019: SOSP
+
+Teaching
+------
+ * Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Fall 2020) 
+
+ * Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Spring 2020) 
+    
 Awards & Honors
 ------
 **2022** &emsp; HKUST Research Travel Grant
@@ -53,11 +113,13 @@ Awards & Honors
 
 **2017** &emsp; ACM/ICPC Asia Regional Urumqi Site Bronze Medal
 
+<!--
 Technical Skills
 ------
 **Programming/Scripting** &emsp; Python, Java, C/C++, x86/64 Assembly
 
 **Others** &emsp; Reverse Engineering, Vulnerability Exploitation
+-->
 
 
 Latest Updated in June 2022
