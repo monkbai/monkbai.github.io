@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "About me"
-excerpt: "About me"
+title: <span style="font-family:Papyrus;">About me</span>
+excerpt: <span style="font-family:Papyrus;">About me</span>
 author_profile: true
 redirect_from: 
   - /about/
