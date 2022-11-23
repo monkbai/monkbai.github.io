@@ -76,7 +76,7 @@ Ke Jiang, Yuyan Bao, Shuai Wang, **Zhibo Liu**, Tianwei Zhang.
 ### ISSTA, 2020 
 [**How far we have come: testing decompilation correctness of C decompilers**](https://dl.acm.org/doi/10.1145/3395363.3397370) [[Code](https://github.com/monkbai/DecFuzzer)]  
 **Zhibo Liu**, Shuai Wang.  
-*Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis*
+*Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis*  
 🎉 Artifact Evaluated, Badges: **Functional**.
 
 Services
