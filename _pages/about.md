@@ -46,7 +46,7 @@ Yuanyuan Yuan, **Zhibo Liu**, Shuai Wang.
 [**Decompiling x86 Deep Neural Network Executables**](https://github.com/monkbai/monkbai.github.io/blob/master/files/sec23-btd-badges.pdf) [[Extended Version](https://arxiv.org/abs/2210.01075)] [[Code](https://github.com/monkbai/DNN-decompiler)]  
 **Zhibo Liu**, Yuanyuan Yuan, Shuai Wang, Xiaofei Xie, Lei Ma.  
 *The Proceedings of the 32nd USENIX Security Symposium.*  
-:tada: Artifact Evaluated, Badges: **Available**, **Functional**, **Reproduced**.
+🎉 Artifact Evaluated, Badges: **Available**, **Functional**, **Reproduced**.
 
 ### TSE 2022
 [**Enhancing DNN-Based Binary Code Function Search With Low-Cost Equivalence Checking**](https://ieeexplore.ieee.org/document/9707874) [[Code](https://github.com/computer-analysis/BinUSE)]   
@@ -77,6 +77,7 @@ Ke Jiang, Yuyan Bao, Shuai Wang, **Zhibo Liu**, Tianwei Zhang.
 [**How far we have come: testing decompilation correctness of C decompilers**](https://dl.acm.org/doi/10.1145/3395363.3397370) [[Code](https://github.com/monkbai/DecFuzzer)]  
 **Zhibo Liu**, Shuai Wang.  
 *Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis*
+🎉 Artifact Evaluated, Badges: **Functional**.
 
 Services
 ------
