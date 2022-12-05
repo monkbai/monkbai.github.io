@@ -111,6 +111,8 @@ Awards & Honors
 
 **2019** &emsp; Chain National College Information Security Contest (CISCN CTF Contest), group second class prize
 
+**2018** &emsp; NKU Gongneng Scholarship
+
 **2018** &emsp; CISCN CTF Contest, group second class prize
 
 **2017** &emsp; ACM/ICPC Asia Regional Urumqi Site Bronze Medal
