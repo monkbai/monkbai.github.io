@@ -53,7 +53,7 @@ Yuanyuan Yuan, **Zhibo Liu**, Shuai Wang.
 *The Proceedings of the 32nd USENIX Security Symposium.*
 
 ### USENIX Sec'23 
-[**Decompiling x86 Deep Neural Network Executables**](https://github.com/monkbai/monkbai.github.io/blob/master/files/sec23-btd-badges.pdf) [[Extended Version](https://arxiv.org/abs/2210.01075)] [[Code](https://github.com/monkbai/DNN-decompiler)] < a href=" " target="_blank">< img src="https://img.shields.io/github/stars/monkbai/DNN-decompiler.svg?style=social&label=Star&maxAge=180"></ a>  
+[**Decompiling x86 Deep Neural Network Executables**](https://github.com/monkbai/monkbai.github.io/blob/master/files/sec23-btd-badges.pdf) [[Extended Version](https://arxiv.org/abs/2210.01075)] [[Code](https://github.com/monkbai/DNN-decompiler)] <a href=" " target="_blank"><img src="https://img.shields.io/github/stars/monkbai/DNN-decompiler.svg?style=social&label=Star&maxAge=180"></a>  
 **Zhibo Liu**, Yuanyuan Yuan, Shuai Wang, Xiaofei Xie, Lei Ma.  
 *The Proceedings of the 32nd USENIX Security Symposium.*  
 🎉 Artifact Evaluated, Badges: **Available**, **Functional**, **Reproduced**.
