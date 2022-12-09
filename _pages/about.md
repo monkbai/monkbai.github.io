@@ -37,6 +37,16 @@ Academic Projects
 Publications
 ------
 
+### ICSE'23 
+**Metamorphic Shader Fusion for Testing Graphics Shader Compilers**  
+Dongwei Xiao, **Zhibo Liu**, Shuai Wang.  
+*Proceedings of the 45th International Conference on Software Engineering*
+
+### ICSE'23 
+**CCTEST: Testing and Repairing Code Completion Systems**   
+Zongjie Li, Chaozheng Wang, **Zhibo Liu**, Haoxuan Wang, Dong Chen, Shuai Wang, Cuiyun Gao.  
+*Proceedings of the 45th International Conference on Software Engineering*
+
 ### USENIX Sec'23 
 [**CacheQL: Quantifying and Localizing Cache Side-Channel Vulnerabilities in Production Software**](https://arxiv.org/abs/2209.14952) [[Code](https://github.com/Yuanyuan-Yuan/CacheQL)]  
 Yuanyuan Yuan, **Zhibo Liu**, Shuai Wang.  
