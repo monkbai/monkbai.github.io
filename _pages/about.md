@@ -37,6 +37,11 @@ Academic Projects
 Publications
 ------
 
+### ISSTA 2023 
+**Exploring Missed Optimizations in WebAssembly Optimizers**  
+**Zhibo Liu**, Dongwei Xiao, Zongjie Li, Shuai Wang, Wei Meng.  
+*Proceedings of the 32nd the ACM SIGSOFT International Symposium on Software Testing and Analysis.*
+
 ### ICSE 2023 
 **Metamorphic Shader Fusion for Testing Graphics Shader Compilers**  
 Dongwei Xiao, **Zhibo Liu**, Shuai Wang.  
