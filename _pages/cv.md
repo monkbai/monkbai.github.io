@@ -15,7 +15,9 @@ redirect_from:
 
 <!--- [My Resume (updated in August 2022)](https://github.com/monkbai/monkbai.github.io/blob/master/files/ZhiboLiu_CV_08_2022.pdf) -->
 
-[My Resume (updated in Nov. 2022)](https://github.com/monkbai/monkbai.github.io/blob/master/files/Resume_ZhiboLiu.pdf)
+<!--- [My Resume (updated in Nov. 2022)](https://github.com/monkbai/monkbai.github.io/blob/master/files/Resume_ZhiboLiu.pdf) -->
+
+[My Resume (updated in Jan. 2023)](https://github.com/monkbai/monkbai.github.io/blob/master/files/CV_Zhibo_Liu_Jan_2023.pdf)
 
 <!---
 Education
