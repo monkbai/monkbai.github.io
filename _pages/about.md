@@ -40,7 +40,7 @@ Publications
 ### ISSTA 2023 
 **Exploring Missed Optimizations in WebAssembly Optimizers**  
 **Zhibo Liu**, Dongwei Xiao, Zongjie Li, Shuai Wang, Wei Meng.  
-*Proceedings of the 32nd the ACM SIGSOFT International Symposium on Software Testing and Analysis.*
+*Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis.*
 
 ### ICSE 2023 
 **Metamorphic Shader Fusion for Testing Graphics Shader Compilers**  
@@ -55,13 +55,13 @@ Zongjie Li, Chaozheng Wang, **Zhibo Liu**, Haoxuan Wang, Dong Chen, Shuai Wang, 
 ### USENIX Sec'23 
 [**CacheQL: Quantifying and Localizing Cache Side-Channel Vulnerabilities in Production Software**](https://arxiv.org/abs/2209.14952) [[Code](https://github.com/Yuanyuan-Yuan/CacheQL)]  
 Yuanyuan Yuan, **Zhibo Liu**, Shuai Wang.  
-*The Proceedings of the 32nd USENIX Security Symposium.*
+*Proceedings of the 32nd USENIX Security Symposium.*
 
 ### USENIX Sec'23 
 [**Decompiling x86 Deep Neural Network Executables**](https://github.com/monkbai/monkbai.github.io/blob/master/files/sec23-btd-badges.pdf)  
 [[Extended Version](https://arxiv.org/abs/2210.01075)] [[Code](https://github.com/monkbai/DNN-decompiler)] <a href=" " target="_blank"><img src="https://img.shields.io/github/stars/monkbai/DNN-decompiler.svg?style=social&label=Star&maxAge=180"></a>  
 **Zhibo Liu**, Yuanyuan Yuan, Shuai Wang, Xiaofei Xie, Lei Ma.  
-*The Proceedings of the 32nd USENIX Security Symposium.*  
+*Proceedings of the 32nd USENIX Security Symposium.*  
 🎉 Artifact Evaluated, Badges: **Available**, **Functional**, **Reproduced**.
 
 ### TSE 2022
