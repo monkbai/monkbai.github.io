@@ -113,12 +113,17 @@ External Artifact Reviewer:
 
 Teaching
 ------
+
+ * Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Spring 2023) 
+
  * Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Fall 2020) 
 
  * Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Spring 2020) 
     
 Awards & Honors
 ------
+**2019-2023** &emsp; HKUST Postgraduate Studentship
+
 **2022** &emsp; HKUST Research Travel Grant
 
 **2022** &emsp; HKUST RedBird Academic Excellence Award (20,000 HKD)
