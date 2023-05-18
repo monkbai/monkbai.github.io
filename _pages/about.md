@@ -47,7 +47,7 @@ Dongwei Xiao, **Zhibo Liu**, Shuai Wang.
 *Proceedings of the 45th International Conference on Software Engineering.*
 
 ### ICSE 2023 
-**CCTEST: Testing and Repairing Code Completion Systems**   
+[**CCTEST: Testing and Repairing Code Completion Systems**](https://arxiv.org/abs/2208.08289)   
 Zongjie Li, Chaozheng Wang, **Zhibo Liu**, Haoxuan Wang, Dong Chen, Shuai Wang, Cuiyun Gao.  
 *Proceedings of the 45th International Conference on Software Engineering.*
 
