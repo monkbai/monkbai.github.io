@@ -97,7 +97,7 @@ Ke Jiang, Yuyan Bao, Shuai Wang, **Zhibo Liu**, Tianwei Zhang.
 Services
 ------
 Artifact Evaluation Committee:
- - 2023: USENIX Security
+ - 2023: USENIX Security, ISSTA
  - 2022: ISSTA, OSDI, USENIX ATC, WiSec
 
 External Reviewer:
