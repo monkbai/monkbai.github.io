@@ -36,6 +36,10 @@ Academic Projects
 Publications
 ------
 
+### Blackhat USA 2023 
+**BTD: Unleashing the Power of Decompilation for x86 Deep Neural Network Executables**  
+**Zhibo Liu**, Yuanyuan Yuan, Xiaofei Xie, Tianxiang Li, Wenqiang Li, and Shuai Wang.  
+
 ### ISSTA 2023 
 **Exploring Missed Optimizations in WebAssembly Optimizers**  
 **Zhibo Liu**, Dongwei Xiao, Zongjie Li, Shuai Wang, Wei Meng.  
