@@ -37,7 +37,7 @@ Publications
 ------
 
 ### Blackhat USA 2023 
-**BTD: Unleashing the Power of Decompilation for x86 Deep Neural Network Executables**  
+[**BTD: Unleashing the Power of Decompilation for x86 Deep Neural Network Executables**](https://www.blackhat.com/us-23/briefings/schedule/index.html#btd-unleashing-the-power-of-decompilation-for-x-deep-neural-network-executables-33028)  
 **Zhibo Liu**, Yuanyuan Yuan, Xiaofei Xie, Tianxiang Li, Wenqiang Li, and Shuai Wang.  
 
 ### ISSTA 2023 
