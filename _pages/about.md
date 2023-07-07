@@ -41,7 +41,7 @@ Publications
 **Zhibo Liu**, Yuanyuan Yuan, Xiaofei Xie, Tianxiang Li, Wenqiang Li, and Shuai Wang.  
 
 ### ISSTA 2023 
-**Exploring Missed Optimizations in WebAssembly Optimizers**  
+[**Exploring Missed Optimizations in WebAssembly Optimizers**](https://github.com/monkbai/monkbai.github.io/blob/master/files/issta23-ditwo.pdf)  
 **Zhibo Liu**, Dongwei Xiao, Zongjie Li, Shuai Wang, Wei Meng.  
 *Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis.*
 
