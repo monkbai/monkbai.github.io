@@ -36,6 +36,11 @@ Academic Projects
 Publications
 ------
 
+### ASE 2023 
+**PHYFU: Fuzzing Modern Physics Simulation Engines**  
+Dongwei Xiao, **Zhibo Liu**, Shuai Wang.  
+*the 38th IEEE/ACM International Conference on Automated Software Engineering.*
+
 ### Blackhat USA 2023 
 [**BTD: Unleashing the Power of Decompilation for x86 Deep Neural Network Executables**](https://www.blackhat.com/us-23/briefings/schedule/index.html#btd-unleashing-the-power-of-decompilation-for-x-deep-neural-network-executables-33028)  
 **Zhibo Liu**, Yuanyuan Yuan, Xiaofei Xie, Tianxiang Li, Wenqiang Li, and Shuai Wang.  
