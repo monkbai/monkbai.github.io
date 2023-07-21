@@ -37,7 +37,7 @@ Publications
 ------
 
 ### ASE 2023 
-**PHYFU: Fuzzing Modern Physics Simulation Engines**  
+[**PHYFU: Fuzzing Modern Physics Simulation Engines**](https://arxiv.org/abs/2307.10818)  
 Dongwei Xiao, **Zhibo Liu**, Shuai Wang.  
 *the 38th IEEE/ACM International Conference on Automated Software Engineering.*
 
@@ -51,7 +51,7 @@ Dongwei Xiao, **Zhibo Liu**, Shuai Wang.
 *Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis.*
 
 ### ICSE 2023 
-**Metamorphic Shader Fusion for Testing Graphics Shader Compilers**  
+[**Metamorphic Shader Fusion for Testing Graphics Shader Compilers**](https://ieeexplore.ieee.org/document/10172737)  
 Dongwei Xiao, **Zhibo Liu**, Shuai Wang.  
 *Proceedings of the 45th International Conference on Software Engineering.*
 
