@@ -39,7 +39,8 @@ Publications
 ### ASE 2023 
 [**PHYFU: Fuzzing Modern Physics Simulation Engines**](https://arxiv.org/abs/2307.10818)  
 Dongwei Xiao, **Zhibo Liu**, Shuai Wang.  
-*the 38th IEEE/ACM International Conference on Automated Software Engineering.*
+*the 38th IEEE/ACM International Conference on Automated Software Engineering.*  
+**ACM Distinguished Paper Award**
 
 ### Blackhat USA 2023 
 [**BTD: Unleashing the Power of Decompilation for x86 Deep Neural Network Executables**](https://www.blackhat.com/us-23/briefings/schedule/index.html#btd-unleashing-the-power-of-decompilation-for-x-deep-neural-network-executables-33028)  
@@ -133,6 +134,8 @@ Teaching
     
 Awards & Honors
 ------
+**2023** &emsp; Black Hat USA Briefing Speaker
+
 **2019-2023** &emsp; HKUST Postgraduate Studentship
 
 **2022** &emsp; HKUST Research Travel Grant
