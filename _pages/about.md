@@ -8,14 +8,16 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a fourth-year PhD student at Department of Computer Science and Engineering, Hong Kong University of Science and Technology, supervised by [Prof. Shuai Wang](https://www.cse.ust.hk/~shuaiw/).
-  Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianjin, China in 2019.
+I obtained my Ph.D. degree supervised by [Prof. Shuai Wang](https://www.cse.ust.hk/~shuaiw/) at the Department of Computer Science and Engineering, Hong Kong University of Science and Technology, in 2023.
+Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianjin, China in 2019.
 
 My research currently focuses on **Reverse Engineering**, my research interests include **Computer Security** and **Software Engineering**.
 
+**I am on the 2023/24 job market now.**
+
 Education
 ------
-**Ph.D.**, Hong Kong University of Science and Technology  &emsp; &nbsp; *Sept 2019 - Now*
+**Ph.D.**, Hong Kong University of Science and Technology  &emsp; *Sept 2019 - Sept 2023*
 
 **B.E.** in Information Security, Nankai University &emsp; &emsp; &emsp; &emsp; &nbsp; *Sept 2015 - June 2019*
 
@@ -134,15 +136,15 @@ Teaching
     
 Awards & Honors
 ------
-**2023** &emsp; Black Hat USA Briefing Speaker
+**2023** &emsp; Black Hat USA Briefing Speaker Honorarium
 
 **2019-2023** &emsp; HKUST Postgraduate Studentship
 
 **2022** &emsp; HKUST Research Travel Grant
 
-**2022** &emsp; HKUST RedBird Academic Excellence Award (20,000 HKD)
+**2022** &emsp; HKUST RedBird Academic Excellence Award 
 
-**2019** &emsp; China National Cyber Security Scholarship (30,000 CNY)
+**2019** &emsp; China National Cyber Security Scholarship 
 
 **2019** &emsp; China National College Information Security Contest (CISCN CTF Contest), group second class prize
 
