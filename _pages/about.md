@@ -154,6 +154,11 @@ Awards & Honors
 
 **2017** &emsp; ACM/ICPC Asia Regional Urumqi Site Bronze Medal
 
+Misc
+------
+
+[The Good, the Bad, and the Bye Bye](https://reyammer.io/blog/2020/10/03/the-good-the-bad-and-the-bye-bye-why-i-left-my-tenured-academic-job/) by Yanick 'reyammer' Fratantonio
+
 <!--
 Technical Skills
 ------
@@ -163,7 +168,7 @@ Technical Skills
 -->
 
 
-Latest Updated in July 2023
+Latest Updated in Oct. 2023
 
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script> -->
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs'></script>
