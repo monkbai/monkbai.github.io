@@ -136,6 +136,10 @@ Teaching
     
 Awards & Honors
 ------
+**2023** &emsp; HKUST CSE Best PhD Dissertation Award (2022-23) - Honorable Mention
+
+**2023** &emsp; ACM SIGSOFT Distinguished Paper Award at ASE 2023
+
 **2023** &emsp; Black Hat USA Briefing Speaker Honorarium
 
 **2019-2023** &emsp; HKUST Postgraduate Studentship
