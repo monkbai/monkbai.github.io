@@ -38,6 +38,11 @@ Academic Projects
 Publications
 ------
 
+### TDSC 2023
+Evaluating C/C++ Vulnerability Detectability of Query-Based Static Application Security Testing Tools  
+Zongjie Li, **Zhibo Liu∗**, Wai Kin Wong∗, Pingchuan Ma, and Shuai Wang  
+*IEEE Transactions on Dependable and Secure Computing, 2023.*
+
 ### ASE 2023 
 [**PHYFU: Fuzzing Modern Physics Simulation Engines**](https://arxiv.org/abs/2307.10818)  
 Dongwei Xiao, **Zhibo Liu**, Shuai Wang.  
@@ -140,7 +145,7 @@ Awards & Honors
 
 **2023** &emsp; ACM SIGSOFT Distinguished Paper Award at ASE 2023
 
-**2023** &emsp; Black Hat USA Briefing Speaker Honorarium
+**2023** &emsp; Black Hat USA Briefing Speaker
 
 **2019-2023** &emsp; HKUST Postgraduate Studentship
 
@@ -172,7 +177,7 @@ Technical Skills
 -->
 
 
-Latest Updated in Oct. 2023
+Latest Updated in Nov. 2023
 
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script> -->
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs'></script>
