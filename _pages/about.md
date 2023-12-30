@@ -7,13 +7,19 @@ redirect_from:
   - /about/
   - /about.html
 ---
+I am a postdoc researcher at the Hong Kong University of Science and Technology, supported by the **HK RGC Postdoctoral Fellowship Scheme (PDFS)**.
 
-I obtained my Ph.D. degree supervised by [Prof. Shuai Wang](https://www.cse.ust.hk/~shuaiw/) at the Department of Computer Science and Engineering, Hong Kong University of Science and Technology, in 2023.
+I obtained my Ph.D. degree supervised by [Prof. Shuai Wang](https://www.cse.ust.hk/~shuaiw/) at [the Department of Computer Science and Engineering](https://cse.hkust.edu.hk/), HKUST, in 2023.
 Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianjin, China in 2019.
 
 My research currently focuses on **Reverse Engineering**, my research interests include **Computer Security** and **Software Engineering**.
 
 **I am on the 2023/24 job market now.**
+
+
+Work Experience
+------
+**Postdoc**, Hong Kong University of Science and Technology  &emsp; *Oct 2023 - now*
 
 Education
 ------
@@ -141,6 +147,8 @@ Teaching
     
 Awards & Honors
 ------
+**2023** &emsp; RGC Postdoctoral Fellowship Scheme (HK$1.2 million over 36 months)
+
 **2023** &emsp; HKUST CSE Best PhD Dissertation Award (2022-23) - Honorable Mention
 
 **2023** &emsp; ACM SIGSOFT Distinguished Paper Award at ASE 2023
