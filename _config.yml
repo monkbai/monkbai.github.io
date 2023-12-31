@@ -10,7 +10,7 @@ locale                   : "Hong Kong"
 title                    : "Zhibo Liu"
 title_separator          : "-"
 name                     : &name "Zhibo Liu"
-description              : &description "PhD student at Department of Computer Science and Engineering, HKUST"
+description              : &description "Postdoc at Department of Computer Science and Engineering, HKUST"
 url                      : https://monkbai.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "monkbai/monkbai.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Zhibo Liu"
   avatar           : "profile.png"
-  bio              : "PhD student at Department of Computer Science and Engineering, HKUST"
+  bio              : "Postdoc at Department of Computer Science and Engineering, HKUST"
   location         : "Hong Kong, China"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
