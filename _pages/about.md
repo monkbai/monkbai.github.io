@@ -44,9 +44,19 @@ Academic Projects
 Publications
 ------
 
+### FSE 2024
+DTD: Comprehensive and Scalable Testing for Debuggers  
+Hongyi Lu, **Zhibo Liu**, Shuai Wang, and Fengwei Zhang  
+*The ACM International Conference on the Foundations of Software Engineering, 2024.*
+
+### FSE 2024
+Metamorphic Testing of Secure Multi-Party Computation (MPC) Compilers  
+Yichen Li, Dongwei Xiao, **Zhibo Liu**, Qi Pang, and Shuai Wang  
+*The ACM International Conference on the Foundations of Software Engineering, 2024.*
+
 ### TDSC 2023
 Evaluating C/C++ Vulnerability Detectability of Query-Based Static Application Security Testing Tools  
-Zongjie Li, **Zhibo Liu∗**, Wai Kin Wong∗, Pingchuan Ma, and Shuai Wang  
+Zongjie Li, **Zhibo Liu**, Wai Kin Wong, Pingchuan Ma, and Shuai Wang  
 *IEEE Transactions on Dependable and Secure Computing, 2023.*
 
 ### ASE 2023 
@@ -185,7 +195,7 @@ Technical Skills
 -->
 
 
-Latest Updated in Nov. 2023
+Latest Updated in Jan. 2024
 
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script> -->
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs'></script>
