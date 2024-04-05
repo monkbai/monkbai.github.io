@@ -47,12 +47,12 @@ Publications
 
 ### Euro S&P 2024
 Are We There Yet? Filling the Gap Between ML-Based Binary  
-Huaijin Wang, **Zhibo Liu***, Shuai Wang*, Ying Wang, Qiyi Tang, Sen Nie, Shi Wu  
+Huaijin Wang, **Zhibo Liu<sup>\*</sup>**, Shuai Wang<sup>\*</sup>, Ying Wang, Qiyi Tang, Sen Nie, Shi Wu  
 *The 9th IEEE European Symposium on Security and Privacy, 2024.*
 
 ### FSE 2024
 DTD: Comprehensive and Scalable Testing for Debuggers  
-Hongyi Lu, **Zhibo Liu***, Shuai Wang, and Fengwei Zhang*  
+Hongyi Lu, **Zhibo Liu<sup>\*</sup>**, Shuai Wang, and Fengwei Zhang<sup>\*</sup>  
 *The ACM International Conference on the Foundations of Software Engineering, 2024.*
 
 ### FSE 2024
