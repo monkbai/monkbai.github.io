@@ -61,7 +61,7 @@ Yichen Li, Dongwei Xiao, **Zhibo Liu**, Qi Pang, and Shuai Wang
 *The ACM International Conference on the Foundations of Software Engineering, 2024.*
 
 ### TDSC 2023
-Evaluating C/C++ Vulnerability Detectability of Query-Based Static Application Security Testing Tools  
+[**Evaluating C/C++ Vulnerability Detectability of Query-Based Static Application Security Testing Tools**](https://ieeexplore.ieee.org/document/10400834)  
 Zongjie Li, **Zhibo Liu**, Wai Kin Wong, Pingchuan Ma, and Shuai Wang  
 *IEEE Transactions on Dependable and Secure Computing, 2023.*
 
