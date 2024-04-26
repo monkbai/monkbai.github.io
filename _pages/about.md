@@ -60,10 +60,10 @@ Metamorphic Testing of Secure Multi-Party Computation (MPC) Compilers
 Yichen Li, Dongwei Xiao, **Zhibo Liu**, Qi Pang, and Shuai Wang  
 *The ACM International Conference on the Foundations of Software Engineering, 2024.*
 
-### TDSC 2023
+### TDSC 2024
 [**Evaluating C/C++ Vulnerability Detectability of Query-Based Static Application Security Testing Tools**](https://ieeexplore.ieee.org/document/10400834)  
 Zongjie Li, **Zhibo Liu**, Wai Kin Wong, Pingchuan Ma, and Shuai Wang  
-*IEEE Transactions on Dependable and Secure Computing, 2023.*
+*IEEE Transactions on Dependable and Secure Computing, 2024.*
 
 ### ASE 2023 
 [**PHYFU: Fuzzing Modern Physics Simulation Engines**](https://arxiv.org/abs/2307.10818)  
