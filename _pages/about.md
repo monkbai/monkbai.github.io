@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a postdoc researcher at the Hong Kong University of Science and Technology, supported by the **HK RGC Postdoctoral Fellowship Scheme (PDFS)**.
+I am a postdoc researcher at the Hong Kong University of Science and Technology, supported by the **[HK RGC Postdoctoral Fellowship Scheme (PDFS)](https://www.ugc.edu.hk/eng/rgc/funding_opport/pdfs/)**.
 
 I obtained my Ph.D. degree supervised by [Prof. Shuai Wang](https://www.cse.ust.hk/~shuaiw/) at [the Department of Computer Science and Engineering](https://cse.hkust.edu.hk/), HKUST, in 2023.
 Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianjin, China in 2019.
