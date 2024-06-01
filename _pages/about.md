@@ -14,7 +14,7 @@ Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianji
 
 My research currently focuses on **Reverse Engineering**, my research interests include **Computer Security** and **Software Engineering**.
 
-**I am on the 2023/24 job market now.**
+**I am on the 2024 job market now.**
 
 
 Work Experience
@@ -163,7 +163,7 @@ Teaching
     
 Awards & Honors
 ------
-**2023** &emsp; RGC Postdoctoral Fellowship Scheme (HK$1.2 million over 36 months)
+**2023** &emsp; HK RGC Postdoctoral Fellowship Scheme (HK$1.2 million over 36 months)
 
 **2023** &emsp; HKUST CSE Best PhD Dissertation Award (2022-23) - Honorable Mention
 
@@ -201,7 +201,7 @@ Technical Skills
 -->
 
 
-Latest Updated in April 2024
+Latest Updated in June 2024
 
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script> -->
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs'></script>
