@@ -14,7 +14,7 @@ Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianji
 
 My research currently focuses on **Reverse Engineering**, my research interests include **Computer Security** and **Software Engineering**.
 
-**I am on the 2024 job market now.**
+<!-- **I am on the 2024 job market now.** -->
 
 
 Work Experience
@@ -44,6 +44,16 @@ Academic Projects
 Publications
 ------
 (* corresponding author)
+
+### CCS 2024
+DeepCache: Revisiting Cache Side-Channel Attacks in Deep Neural Networks Executables  
+**Zhibo Liu**, Yuanyuan Yuan, Yanzuo Chen, Sihang Hu, Tianxiang Li, and Shuai Wang  
+*The ACM Conference on Computer and Communications Security, 2024.*
+
+### CCS 2024
+HyperTheft: Thieving Model Weights from TEE-Shielded Neural Networks via Ciphertext Side Channels  
+Yuanyuan Yuan, **Zhibo Liu**, Sen Deng, Yanzuo Chen, Shuai Wang, Yinqian Zhang, and Zhendong Su  
+*The ACM Conference on Computer and Communications Security, 2024.*
 
 ### Euro S&P 2024
 Are We There Yet? Filling the Gap Between ML-Based Binary  
@@ -201,7 +211,7 @@ Technical Skills
 -->
 
 
-Latest Updated in June 2024
+Latest Updated in July 2024
 
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script> -->
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs'></script>
