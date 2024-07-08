@@ -56,7 +56,7 @@ Yuanyuan Yuan, **Zhibo Liu**, Sen Deng, Yanzuo Chen, Shuai Wang, Yinqian Zhang, 
 *The ACM Conference on Computer and Communications Security, 2024.*
 
 ### Euro S&P 2024
-Are We There Yet? Filling the Gap Between ML-Based Binary  
+Are We There Yet? Filling the Gap Between ML-Based Binary Similarity Analysis and Binary Software Composition Analysis  
 Huaijin Wang, **Zhibo Liu<sup>\*</sup>**, Shuai Wang<sup>\*</sup>, Ying Wang, Qiyi Tang, Sen Nie, Shi Wu  
 *The 9th IEEE European Symposium on Security and Privacy, 2024.*
 
