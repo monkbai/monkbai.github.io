@@ -61,12 +61,12 @@ Huaijin Wang, **Zhibo Liu<sup>\*</sup>**, Shuai Wang<sup>\*</sup>, Ying Wang, Qi
 *The 9th IEEE European Symposium on Security and Privacy, 2024.*
 
 ### FSE 2024
-DTD: Comprehensive and Scalable Testing for Debuggers  
+[**DTD: Comprehensive and Scalable Testing for Debuggers**](https://dl.acm.org/doi/10.1145/3643779)  
 Hongyi Lu, **Zhibo Liu<sup>\*</sup>**, Shuai Wang, and Fengwei Zhang<sup>\*</sup>  
 *The ACM International Conference on the Foundations of Software Engineering, 2024.*
 
 ### FSE 2024
-Metamorphic Testing of Secure Multi-Party Computation (MPC) Compilers  
+[**Metamorphic Testing of Secure Multi-Party Computation (MPC) Compilers**](https://dl.acm.org/doi/10.1145/3643781)  
 Yichen Li, Dongwei Xiao, **Zhibo Liu**, Qi Pang, and Shuai Wang  
 *The ACM International Conference on the Foundations of Software Engineering, 2024.*
 
