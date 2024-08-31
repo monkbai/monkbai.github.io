@@ -45,6 +45,16 @@ Publications
 ------
 (* corresponding author)
 
+### NDSS 2025
+MTZK: Testing and Exploring Bugs in Zero-Knowledge (ZK) Compilers  
+Dongwei Xiao, **Zhibo Liu**, Yiteng Peng, and Shuai Wang  
+*The Network and Distributed System Security Symposium, 2025.*
+
+### NDSS 2025
+Compiled Models, Built-In Exploits: Uncovering Pervasive Bit-Flip Attack Surfaces in DNN Executables  
+Yanzuo Chen, **Zhibo Liu**, Yuanyuan Yuan, Sihang Hu, Tianxiang Li, and Shuai Wang  
+*The Network and Distributed System Security Symposium, 2025.*
+
 ### CCS 2024
 DeepCache: Revisiting Cache Side-Channel Attacks in Deep Neural Networks Executables  
 **Zhibo Liu**, Yuanyuan Yuan, Yanzuo Chen, Sihang Hu, Tianxiang Li, and Shuai Wang  
