@@ -45,9 +45,15 @@ Publications
 ------
 (* corresponding author)
 
+
+### IEEE S&P 2025 
+CipherSteal: Stealing Input Data from TEE-Shielded Neural Networks with Ciphertext Side Channels   
+Yuanyuan Yuan, **Zhibo Liu**, Sen Deng, Ynazuo Chen, Shuai Wang, Yinqian Zhang, and Zhendong Su.  
+*2025 IEEE Symposium on Security and Privacy (SP)*
+
 ### NDSS 2025
 MTZK: Testing and Exploring Bugs in Zero-Knowledge (ZK) Compilers  
-Dongwei Xiao, **Zhibo Liu**, Yiteng Peng, and Shuai Wang  
+Dongwei Xiao, **Zhibo Liu<sup>\*</sup>**, Yiteng Peng, and Shuai Wang<sup>\*</sup>  
 *The Network and Distributed System Security Symposium, 2025.*
 
 ### NDSS 2025
