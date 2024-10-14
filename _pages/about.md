@@ -61,6 +61,11 @@ Compiled Models, Built-In Exploits: Uncovering Pervasive Bit-Flip Attack Surface
 Yanzuo Chen, **Zhibo Liu**, Yuanyuan Yuan, Sihang Hu, Tianxiang Li, and Shuai Wang  
 *The Network and Distributed System Security Symposium, 2025.*
 
+
+### Blackhat Europe 2024 
+The Devil is in the (Micro-) Architectures: Uncovering New Side-Channel and Bit-Flip Attack Surfaces in DNN Executables  
+Yanzuo Chen, **Zhibo Liu**(co-speaker), Yuanyuan Yuan, Tianxiang Li, Sihang Hu, Zhihui Lin, and Shuai Wang  
+
 ### CCS 2024
 DeepCache: Revisiting Cache Side-Channel Attacks in Deep Neural Networks Executables  
 **Zhibo Liu**, Yuanyuan Yuan, Yanzuo Chen, Sihang Hu, Tianxiang Li, and Shuai Wang  
