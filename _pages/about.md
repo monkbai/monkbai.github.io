@@ -67,7 +67,7 @@ The Devil is in the (Micro-) Architectures: Uncovering New Side-Channel and Bit-
 Yanzuo Chen, **Zhibo Liu**(co-speaker), Yuanyuan Yuan, Tianxiang Li, Sihang Hu, Zhihui Lin, and Shuai Wang  
 
 ### CCS 2024
-DeepCache: Revisiting Cache Side-Channel Attacks in Deep Neural Networks Executables  
+[**DeepCache: Revisiting Cache Side-Channel Attacks in Deep Neural Networks Executables**](https://github.com/monkbai/monkbai.github.io/blob/master/files/deepcache.pdf)  
 **Zhibo Liu**, Yuanyuan Yuan, Yanzuo Chen, Sihang Hu, Tianxiang Li, and Shuai Wang  
 *The ACM Conference on Computer and Communications Security, 2024.*
 
@@ -232,7 +232,7 @@ Technical Skills
 -->
 
 
-Latest Updated in July 2024
+Latest Updated in October 2024
 
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script> -->
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs'></script>
