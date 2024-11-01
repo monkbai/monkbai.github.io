@@ -46,6 +46,14 @@ Publications
 (* corresponding author)
 
 
+### ICSE 2025 
+Preserving Privacy in Software Composition Analysis: A Study of Technical Solutions and Enhancements  
+Huaijin Wang, **Zhibo Liu**, Yanbo Dai, Shuai Wang, Qiyi Tang, Sen Nie, and Shi Wu.  
+
+### ICSE 2025 
+Testing and Understanding Deviation Behaviors in FHE-hardened Machine Learning Models  
+Yiteng Peng, Daoyuan Wu, **Zhibo Liu**, Dongwei Xiao, Zhenlan Ji, Juergen Rahmel, and Shuai Wang.  
+
 ### IEEE S&P 2025 
 CipherSteal: Stealing Input Data from TEE-Shielded Neural Networks with Ciphertext Side Channels   
 Yuanyuan Yuan, **Zhibo Liu**, Sen Deng, Ynazuo Chen, Shuai Wang, Yinqian Zhang, and Zhendong Su.  
@@ -232,7 +240,7 @@ Technical Skills
 -->
 
 
-Latest Updated in October 2024
+Latest Updated in November 2024
 
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script> -->
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs'></script>
