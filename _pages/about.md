@@ -48,7 +48,7 @@ Publications
 
 ### ICSE 2025 
 Preserving Privacy in Software Composition Analysis: A Study of Technical Solutions and Enhancements  
-Huaijin Wang, **Zhibo Liu**, Yanbo Dai, Shuai Wang, Qiyi Tang, Sen Nie, and Shi Wu.  
+Huaijin Wang, **Zhibo Liu<sup>\*</sup>**, Yanbo Dai, Shuai Wang, Qiyi Tang, Sen Nie, and Shi Wu.  
 
 ### ICSE 2025 
 Testing and Understanding Deviation Behaviors in FHE-hardened Machine Learning Models  
