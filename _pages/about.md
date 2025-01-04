@@ -65,6 +65,11 @@ Dongwei Xiao, **Zhibo Liu<sup>\*</sup>**, Yiteng Peng, and Shuai Wang<sup>\*</su
 *The Network and Distributed System Security Symposium, 2025.*
 
 ### NDSS 2025
+BitShield: Defending Against Bit-Flip Attacks on DNN Executables  
+Yanzuo Chen, Yuanyuan Yuan, **Zhibo Liu**, Sihang Hu, Tianxiang Li, and Shuai Wang  
+*The Network and Distributed System Security Symposium, 2025.*
+
+### NDSS 2025
 Compiled Models, Built-In Exploits: Uncovering Pervasive Bit-Flip Attack Surfaces in DNN Executables  
 Yanzuo Chen, **Zhibo Liu**, Yuanyuan Yuan, Sihang Hu, Tianxiang Li, and Shuai Wang  
 *The Network and Distributed System Security Symposium, 2025.*
