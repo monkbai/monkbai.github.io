@@ -12,7 +12,7 @@ I am a postdoc researcher at the Hong Kong University of Science and Technology,
 I obtained my Ph.D. degree supervised by [Prof. Shuai Wang](https://www.cse.ust.hk/~shuaiw/) at [the Department of Computer Science and Engineering](https://cse.hkust.edu.hk/), HKUST, in 2023.
 Before joining HKUST, I received my B.Eng. degree from Nankai University, Tianjin, China in 2019.
 
-My research currently focuses on **Reverse Engineering**, my research interests include **Computer Security** and **Software Engineering**.
+My research currently focuses on **Binary Analysis** and **Reverse Engineering**. My research interests include computer Security and software Engineering.
 
 <!-- **I am on the 2024 job market now.** -->
 
@@ -45,6 +45,17 @@ Publications
 ------
 (* corresponding author)
 
+### CCS 2025
+An Empirical Study Measuring In-The-Wild Cryptographic Microarchitectural Side-Channel Patches  
+Sen Deng, **Zhibo Liu<sup>\*</sup>**, Shuai Wang, Yinqian Zhang<sup>\*</sup>.  
+
+### PLDI 2025
+Divergence-aware Testing of Graphics Shader Compiler Back-ends  
+Dongwei Xiao, Shuai Wang, **Zhibo Liu**, Yiteng Peng, Daoyuan Wu, and Zhendong Su.  
+
+### ISSTA 2025
+DecLLM: LLM-Augmented Recompilable Decompilation for Enabling Programmatic Use of Decompiled Code  
+Wai Kin Wong, Daoyuan Wu<sup>\*</sup>, Huaijin Wang, Zongjie Li, **Zhibo Liu<sup>\*</sup>**, Shuai Wang<sup>\*</sup>, Qiyi Tang, Sen Nie, and Shi Wu.  
 
 ### ICSE 2025 
 Preserving Privacy in Software Composition Analysis: A Study of Technical Solutions and Enhancements  
@@ -57,7 +68,7 @@ Yiteng Peng, Daoyuan Wu, **Zhibo Liu**, Dongwei Xiao, Zhenlan Ji, Juergen Rahmel
 ### IEEE S&P 2025 
 CipherSteal: Stealing Input Data from TEE-Shielded Neural Networks with Ciphertext Side Channels   
 Yuanyuan Yuan, **Zhibo Liu**, Sen Deng, Ynazuo Chen, Shuai Wang, Yinqian Zhang, and Zhendong Su.  
-*2025 IEEE Symposium on Security and Privacy (SP)*
+*2025 IEEE Symposium on Security and Privacy (SP)* **Distinguished Paper Award**  
 
 ### NDSS 2025
 MTZK: Testing and Exploring Bugs in Zero-Knowledge (ZK) Compilers  
@@ -180,6 +191,8 @@ Ke Jiang, Yuyan Bao, Shuai Wang, **Zhibo Liu**, Tianwei Zhang.
 Services
 ------
 Reviewer:
+ - 2025: TDSC, TPDS
+ - 2024: TDSC
  - 2023: T-IFS, TDSC
 
 Artifact Evaluation Committee:
@@ -187,14 +200,18 @@ Artifact Evaluation Committee:
  - 2022: ISSTA, OSDI, USENIX ATC, WiSec
 
 External Reviewer:
+ - 2025: IEEE S&P
+ - 2024: IEEE S&P, USENIX Security
  - 2023: IEEE S&P, USENIX Security, ISSTA, NeurIPS, SANER ERA Track
  - 2022: ASE, NDSS BAR, CCS, AsiaCCS
  - 2020: TIFS, ICICS, ICSE SEIP
+<!--
  - 2019: ICICS
-
+ 
 External Artifact Reviewer:
  - 2020: ICSE
  - 2019: SOSP
+-->
 
 Teaching
 ------
@@ -220,7 +237,7 @@ Awards & Honors
 **2022** &emsp; HKUST Research Travel Grant
 
 **2022** &emsp; HKUST RedBird Academic Excellence Award 
-
+<!--
 **2019** &emsp; China National Cyber Security Scholarship 
 
 **2019** &emsp; China National College Information Security Contest (CISCN CTF Contest), group second class prize
@@ -230,7 +247,7 @@ Awards & Honors
 **2018** &emsp; CISCN CTF Contest, group second class prize
 
 **2017** &emsp; ACM/ICPC Asia Regional Urumqi Site Bronze Medal
-
+-->
 Misc
 ------
 
@@ -245,7 +262,7 @@ Technical Skills
 -->
 
 
-Latest Updated in November 2024
+Latest update in July 2025
 
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs&cl=ffffff&w=a"></script> -->
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs'></script>
