@@ -215,12 +215,11 @@ External Artifact Reviewer:
 
 Teaching
 ------
+Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Spring 2023) 
 
- - Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Spring 2023) 
+Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Fall 2020) 
 
- - Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Fall 2020) 
-
- - Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Spring 2020) 
+Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Spring 2020) 
     
 Awards & Honors
 ------
