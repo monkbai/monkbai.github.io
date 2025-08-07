@@ -87,7 +87,7 @@ Yanzuo Chen, **Zhibo Liu**, Yuanyuan Yuan, Sihang Hu, Tianxiang Li, and Shuai Wa
 
 
 ### Blackhat Europe 2024 
-The Devil is in the (Micro-) Architectures: Uncovering New Side-Channel and Bit-Flip Attack Surfaces in DNN Executables  
+[**The Devil is in the (Micro-) Architectures: Uncovering New Side-Channel and Bit-Flip Attack Surfaces in DNN Executables**](https://www.blackhat.com/eu-24/briefings/schedule/#the-devil-is-in-the-micro--architectures-uncovering-new-side-channel-and-bit-flip-attack-surfaces-in-dnn-executables-42018)  
 Yanzuo Chen, **Zhibo Liu**(co-speaker), Yuanyuan Yuan, Tianxiang Li, Sihang Hu, Zhihui Lin, and Shuai Wang  
 
 ### CCS 2024
@@ -96,12 +96,12 @@ Yanzuo Chen, **Zhibo Liu**(co-speaker), Yuanyuan Yuan, Tianxiang Li, Sihang Hu, 
 *The ACM Conference on Computer and Communications Security, 2024.*
 
 ### CCS 2024
-HyperTheft: Thieving Model Weights from TEE-Shielded Neural Networks via Ciphertext Side Channels  
+[**HyperTheft: Thieving Model Weights from TEE-Shielded Neural Networks via Ciphertext Side Channels**](https://dl.acm.org/doi/10.1145/3658644.3690317)  
 Yuanyuan Yuan, **Zhibo Liu**, Sen Deng, Yanzuo Chen, Shuai Wang, Yinqian Zhang, and Zhendong Su  
 *The ACM Conference on Computer and Communications Security, 2024.*
 
 ### Euro S&P 2024
-Are We There Yet? Filling the Gap Between ML-Based Binary Similarity Analysis and Binary Software Composition Analysis  
+[**Are We There Yet? Filling the Gap Between ML-Based Binary Similarity Analysis and Binary Software Composition Analysis**](https://ieeexplore.ieee.org/abstract/document/10629030)  
 Huaijin Wang, **Zhibo Liu<sup>\*</sup>**, Shuai Wang<sup>\*</sup>, Ying Wang, Qiyi Tang, Sen Nie, Shi Wu  
 *The 9th IEEE European Symposium on Security and Privacy, 2024.*
 
