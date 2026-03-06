@@ -347,6 +347,7 @@ function populateTerminal(cfg) {
     const scholarRaw = cfg.links?.scholar || '';
     const orcidRaw = cfg.links?.orcid || '';
     const cvRaw = cfg.links?.cv || '';
+    const cvResolved = cvRaw ? resolveAssetUrl(cvRaw) : '';
     const websiteRaw = cfg.links?.website || '';
 
     const pairs = [
@@ -358,7 +359,7 @@ function populateTerminal(cfg) {
       ['github', githubRaw ? displayUrl(githubRaw) : ''],
       ['scholar', scholarRaw ? displayUrl(scholarRaw) : ''],
       ['orcid', orcidRaw ? displayUrl(orcidRaw) : ''],
-      ['cv', cvRaw ? displayUrl(cvRaw) : ''],
+      ['cv', cvResolved ? displayUrl(cvResolved) : ''],
       ['website', websiteRaw ? displayUrl(websiteRaw) : '']
     ].filter(([, value]) => String(value || '').trim());
 
