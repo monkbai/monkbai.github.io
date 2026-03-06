@@ -26,7 +26,7 @@ const USER_CONFIG = {
   focus: ["Computer Security", "Binary Analysis", "Software Reverse Engineering", "Software Engineering"],
   latestUpdate: "March 2026",
   // photo: "https://monkbai.github.io/images/cyber-hacker-icon.png",
-  photo: "https://github.com/monkbai/monkbai.github.io/blob/main/pic/photo1.png",
+  photo: "pic/photo1.png",
 
   stats: [
     { value: "29", label: "Publications" },
