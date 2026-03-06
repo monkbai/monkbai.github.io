@@ -386,7 +386,8 @@ const USER_CONFIG = {
   ],
 
   honors: [
-    { year: "2023", text: "HK RGC Postdoctoral Fellowship Scheme (HK$1.2 million over 36 months)" },
+    { year: "2025", text: "IEEE S&P Distinguished Paper Award" },
+    { year: "2023", text: "HK RGC Postdoctoral Fellowship Scheme" },
     { year: "2023", text: "HKUST CSE Best PhD Dissertation Award (2022-23) - Honorable Mention" },
     { year: "2023", text: "ACM SIGSOFT Distinguished Paper Award at ASE 2023" },
     { year: "2023", text: "Black Hat USA Briefing Speaker" },
