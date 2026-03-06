@@ -387,10 +387,11 @@ const USER_CONFIG = {
 
   honors: [
     { year: "2025", text: "IEEE S&P Distinguished Paper Award" },
+    { year: "2024", text: "Black Hat Europe Briefing Speaker (London, UK)" },
     { year: "2023", text: "HK RGC Postdoctoral Fellowship Scheme" },
     { year: "2023", text: "HKUST CSE Best PhD Dissertation Award (2022-23) - Honorable Mention" },
     { year: "2023", text: "ACM SIGSOFT Distinguished Paper Award at ASE 2023" },
-    { year: "2023", text: "Black Hat USA Briefing Speaker" },
+    { year: "2023", text: "Black Hat USA Briefing Speaker (Las Vegas, USA)" },
     { year: "2019-2023", text: "HKUST Postgraduate Studentship" },
     { year: "2022", text: "HKUST Research Travel Grant" },
     { year: "2022", text: "HKUST RedBird Academic Excellence Award" }
