@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic homepage of Zhibo Liu — Postdoctoral researcher in binary analysis, reverse engineering, and software security.">
+    <meta property="og:title" content="Zhibo Liu | Academic Homepage">
+    <meta property="og:description" content="Postdoctoral researcher in binary analysis, reverse engineering, and software security.">
+    <title>zhiboliu@academia ~ %</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#about" class="skip-link">Skip to main content</a>
+    <!-- Terminal Window Chrome -->
+    <div class="terminal-window">
+        <div class="terminal-titlebar">
+            <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-tabs">
+                <a href="#about" class="terminal-tab active" data-section="about">~/about</a>
+                <a href="#contact" class="terminal-tab" data-section="contact">~/contact</a>
+                <a href="#experience" class="terminal-tab" data-section="experience">~/exp</a>
+                <a href="#news" class="terminal-tab" data-section="news">~/news</a>
+                <a href="#services" class="terminal-tab" data-section="services">~/services</a>
+                <a href="#teaching" class="terminal-tab" data-section="teaching">~/teaching</a>
+                <a href="#publications" class="terminal-tab" data-section="publications">~/papers</a>
+                <a href="#honors" class="terminal-tab" data-section="honors">~/honors</a>
+                <a href="#misc" class="terminal-tab" data-section="misc">~/misc</a>
+            </div>
+            <button type="button" class="terminal-theme-btn" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-indicator"></span>
+            </button>
+        </div>
+
+        <main role="main" class="terminal-body">
+            <!-- Scanline overlay -->
+            <div class="scanline"></div>
+
+            <!-- About: whoami -->
+            <section id="about" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd" data-cmd="whoami --verbose">whoami --verbose</span>
+                </div>
+                <div class="command-output whoami-output">
+                    <div class="hero-photo">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <pre class="ascii-art">
+ ______     _ _             _     _       
+|__  / |__ (_) |__   ___   | |   (_)_   _ 
+  / /| '_ \| | '_ \ / _ \  | |   | | | | |
+ / /_| | | | | |_) | (_) | | |___| | |_| |
+/____|_| |_|_|_.__/ \___/  |_____|_|\__,_|
+                    </pre>
+                                        <div class="nameplate" id="cfg-display-name">Zhibo Liu (刘智博)</div>
+                    <div class="info-block">
+                        <div class="info-row">
+                            <span class="info-key">ROLE</span>
+                            <span class="info-val" id="cfg-role">PhD Candidate @ Your University</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-key">LOCATION</span>
+                            <span class="info-val" id="cfg-location">Hong Kong, China</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-key">FOCUS</span>
+                            <span class="info-val" id="cfg-focus"><span class="hl">your research area</span>, <span class="hl">machine learning</span>, <span class="hl">AI</span></span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-key">STATS</span>
+                            <span class="info-val" id="cfg-stats"><span class="stat-num">10+</span> papers · <span class="stat-num">100+</span> citations · <span class="stat-num">5+</span> projects</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-key">UPDATED</span>
+                            <span class="info-val" id="cfg-updated">July 2025</span>
+                        </div>
+                    </div>
+                    <div class="bio-block" id="cfg-bio"></div>
+                    <div class="recruit-banner" id="cfg-recruitment"></div>
+                </div>
+            </section>
+
+            <!-- Contact: echo -->
+            <section id="contact" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">cat ~/contact.json | jq .</span>
+                </div>
+                <div class="command-output">
+                                        <pre class="json-output" id="cfg-contact">{
+  <span class="json-key">"message"</span>: <span class="json-str">"Feel free to reach out!"</span>,
+  <span class="json-key">"email"</span>:   <span class="json-str">"your.email@university.edu"</span>,
+  <span class="json-key">"github"</span>:  <span class="json-str">"github.com/yourname"</span>
+}</pre>
+                </div>
+            </section>
+
+            <!-- News: tail -f -->
+            <section id="news" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">tail -f ~/news.log</span>
+                </div>
+                <div class="command-output" id="cfg-news">
+                    <div class="log-entry">
+                        <span class="log-level log-new">NEW</span>
+                        <span class="log-msg">Your news item here.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience: cat -->
+            <section id="experience" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">cat ~/experience.yml</span>
+                </div>
+                <div class="command-output">
+                    <pre class="yaml-output" id="cfg-experience"><span class="yaml-key">education:</span>
+  - <span class="yaml-key">degree:</span> <span class="yaml-val">Ph.D. in Computer Science</span>
+    <span class="yaml-key">institution:</span> <span class="yaml-val">Your University</span>
+    <span class="yaml-key">period:</span> <span class="yaml-val">2020 - Present</span>
+    <span class="yaml-key">status:</span> <span class="yaml-val yaml-active">active</span></pre>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <section id="services" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">cat ~/services.md</span>
+                </div>
+                <div class="command-output" id="cfg-services">
+                    <div class="service-group">
+                        <div class="service-title">Reviewer</div>
+                        <ul class="service-list">
+                            <li class="service-item">2025: TDSC, TPDS</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Teaching -->
+            <section id="teaching" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">cat ~/teaching.log</span>
+                </div>
+                <div class="command-output" id="cfg-teaching">
+                    <div class="log-entry">
+                        <span class="log-time">2023</span>
+                        <span class="log-level log-info">TA</span>
+                        <span class="log-msg">Teaching Assistant for COMP 3632: Principles of Cybersecurity.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Publications: papers -->
+            <section id="publications" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~/papers</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">ls --sort=year --desc</span>
+                </div>
+                <div class="command-output" id="cfg-publications">
+                    <div class="paper-note" id="cfg-paper-note">(* denotes corresponding author)</div>
+                    <div class="ls-header">
+                        <span class="ls-col ls-date">year</span>
+                        <span class="ls-col ls-name">paper</span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2025</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link">Your Paper Title Here</a>
+                            <span class="file-meta">
+                                <span class="file-authors"><strong>Your Name</strong>, Co-Author 1, Co-Author 2</span>
+                                <span class="file-venue">Conference/Journal Name 2025</span>
+                            </span>
+                            <span class="file-actions">
+                                <a href="#" class="action-link">[paper]</a>
+                                <a href="#" class="action-link">[code]</a>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Honors -->
+            <section id="honors" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">cat ~/honors.log</span>
+                </div>
+                <div class="command-output" id="cfg-honors">
+                    <div class="log-entry">
+                        <span class="log-time">2023</span>
+                        <span class="log-level log-new">AWARD</span>
+                        <span class="log-msg">HK RGC Postdoctoral Fellowship Scheme.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Misc -->
+            <section id="misc" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">cat ~/misc.txt</span>
+                </div>
+                <div class="command-output" id="cfg-misc">
+                    <div class="misc-item">Reading: The Good, the Bad, and the Bye Bye</div>
+                </div>
+            </section>
+
+            <!-- Interactive prompt -->
+            <div class="terminal-prompt-line">
+                <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                <span class="cursor">█</span>
+            </div>
+
+            <div class="clustrmaps-controls">
+                <button type="button" class="clustrmaps-toggle" id="clustrmapsToggle" aria-controls="clustrmapsPanel" aria-expanded="false">
+                    Show visitor map
+                </button>
+            </div>
+            <div class="clustrmaps-container" id="clustrmapsPanel" hidden>
+                <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs"></script>
+            </div>
+        </main>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
