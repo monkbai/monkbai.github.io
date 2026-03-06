@@ -2,6 +2,7 @@
 const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 const savedTheme = localStorage.getItem('theme') || 'light';
+const SCRIPT_BASE_URL = new URL('./', document.currentScript?.src || window.location.href);
 html.setAttribute('data-theme', savedTheme);
 
 if (themeToggle) {
@@ -108,6 +109,18 @@ function displayUrl(url) {
   return String(url || '').replace(/^https?:\/\//, '').replace(/\/$/, '');
 }
 
+function resolveAssetUrl(path) {
+  const raw = String(path || '').trim();
+  if (!raw) return '';
+  if (/^(?:https?:|data:|blob:|\/\/)/i.test(raw)) return raw;
+  if (raw.startsWith('/')) return raw;
+  try {
+    return new URL(raw, SCRIPT_BASE_URL).toString();
+  } catch {
+    return raw;
+  }
+}
+
 function paperHref(links) {
   if (!links) return '#';
   return links.paper || links.pdf || links.talk || Object.values(links).find(Boolean) || '#';
@@ -210,7 +223,8 @@ function populateTerminal(cfg) {
 
   const photoEl = document.querySelector('.hero-photo');
   if (photoEl && cfg.photo) {
-    photoEl.innerHTML = `<img src="${escapeHtml(cfg.photo)}" alt="${escapeHtml(cfg.name || 'Profile photo')}" loading="lazy" decoding="async">`;
+    const resolvedPhotoUrl = resolveAssetUrl(cfg.photo);
+    photoEl.innerHTML = `<img src="${escapeHtml(resolvedPhotoUrl)}" alt="${escapeHtml(cfg.name || 'Profile photo')}" loading="lazy" decoding="async">`;
   }
 
   const pubCont = document.getElementById('cfg-publications');
