@@ -37,7 +37,7 @@ const USER_CONFIG = {
 
   links: {
     website: "https://monkbai.github.io/",
-    cv: "file/CV-Zhibo_Liu.pdf",
+    cv: "files/CV-Zhibo_Liu.pdf",
     github: "https://github.com/monkbai",
     scholar: "https://scholar.google.com/citations?hl=en&user=kIsmHd4AAAAJ",
     orcid: "https://orcid.org/0000-0002-7872-1129"
