@@ -27,6 +27,7 @@ const USER_CONFIG = {
   latestUpdate: "March 2026",
   // photo: "https://monkbai.github.io/images/cyber-hacker-icon.png",
   photo: "pic/photo1.png",
+  photoDark: "pic/photo2.png",
 
   stats: [
     { value: "29", label: "Publications" },

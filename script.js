@@ -3,6 +3,7 @@ const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 const savedTheme = localStorage.getItem('theme') || 'light';
 const SCRIPT_BASE_URL = new URL('./', document.currentScript?.src || window.location.href);
+let activeConfig = null;
 html.setAttribute('data-theme', savedTheme);
 
 if (themeToggle) {
@@ -10,6 +11,7 @@ if (themeToggle) {
         const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         html.setAttribute('data-theme', next);
         localStorage.setItem('theme', next);
+    if (activeConfig) updateHeroPhoto(activeConfig);
     });
 }
 
@@ -121,6 +123,21 @@ function resolveAssetUrl(path) {
   }
 }
 
+function updateHeroPhoto(cfg) {
+  const photoEl = document.querySelector('.hero-photo');
+  if (!photoEl || !cfg) return;
+
+  const currentTheme = html.getAttribute('data-theme') || 'light';
+  const selectedPhoto = currentTheme === 'dark'
+    ? (cfg.photoDark || cfg.photo)
+    : (cfg.photo || cfg.photoDark);
+
+  if (!selectedPhoto) return;
+
+  const resolvedPhotoUrl = resolveAssetUrl(selectedPhoto);
+  photoEl.innerHTML = `<img src="${escapeHtml(resolvedPhotoUrl)}" alt="${escapeHtml(cfg.name || 'Profile photo')}" loading="lazy" decoding="async">`;
+}
+
 function paperHref(links) {
   if (!links) return '#';
   return links.paper || links.pdf || links.talk || Object.values(links).find(Boolean) || '#';
@@ -160,6 +177,8 @@ function starBadgeHtml(publication) {
 }
 
 function populateTerminal(cfg) {
+  activeConfig = cfg;
+
   if (cfg.name) document.title = `${cfg.name.toLowerCase().replace(/\s+/g,'_')}@academia ~ %`;
 
   const promptText = cfg.promptLabel || `${(cfg.name || 'visitor').toLowerCase().replace(/\s+/g, '')}@academia`;
@@ -221,11 +240,7 @@ function populateTerminal(cfg) {
     }
   }
 
-  const photoEl = document.querySelector('.hero-photo');
-  if (photoEl && cfg.photo) {
-    const resolvedPhotoUrl = resolveAssetUrl(cfg.photo);
-    photoEl.innerHTML = `<img src="${escapeHtml(resolvedPhotoUrl)}" alt="${escapeHtml(cfg.name || 'Profile photo')}" loading="lazy" decoding="async">`;
-  }
+  updateHeroPhoto(cfg);
 
   const pubCont = document.getElementById('cfg-publications');
   if (pubCont && cfg.publications?.length) {
