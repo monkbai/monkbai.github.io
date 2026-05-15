@@ -13,7 +13,7 @@ const USER_CONFIG = {
   supervisorName: "Prof. Shuai Wang",
   supervisorUrl: "https://www.cse.ust.hk/~shuaiw/",
   about: [
-    "Zhibo Liu is an Associate Professor in the School of Computer Science at Nanjing University since 2026.",
+    "Zhibo Liu has been an Associate Professor in the School of Computer Science at Nanjing University since 2026.",
     "Previously, he was a Postdoctoral Researcher at the Hong Kong University of Science and Technology (HKUST) from 2023 to 2025, supported by the HK RGC Postdoctoral Fellowship Scheme.",
     "He obtained his Ph.D. in 2023 from the Department of Computer Science and Engineering at HKUST, under the supervision of Prof. Shuai Wang. Before joining HKUST, he received his B.Eng. degree from Nankai University in 2019.",
     "His current research focuses on software reverse engineering and binary analysis, with broader interests in computer security and software engineering."
