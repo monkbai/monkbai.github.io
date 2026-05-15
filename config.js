@@ -23,7 +23,7 @@ const USER_CONFIG = {
     // contact: "zhiboliu [at] nju [dot] edu [dot] cn",
     // contactHref: "mailto:zhiboliu@nju.edu.cn"
   },
-  focus: ["Computer Security", "Binary Analysis", "Software Reverse Engineering", "Software Engineering"],
+  focus: ["Software Security", "AI Security", "Binary Analysis", "Reverse Engineering"],
   latestUpdate: "March 2026",
   // photo: "https://monkbai.github.io/images/cyber-hacker-icon.png",
   photo: "pic/photo1.png",
