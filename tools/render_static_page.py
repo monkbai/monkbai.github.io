@@ -94,12 +94,22 @@ def render_about_paragraph(text: str, cfg: dict) -> str:
     return f'<p>{rendered}</p>'
 
 
-def render_json_lines(pairs: list[tuple[str, str]]) -> str:
+def render_json_value(display_value: str, href: str | None) -> str:
+    if not href:
+        return f'<span class="json-str">"{escape(display_value)}"</span>'
+    return (
+        '<span class="json-str">"</span>'
+        f'<a href="{escape(href)}" class="json-link" target="_blank" rel="noopener noreferrer">{escape(display_value)}</a>'
+        '<span class="json-str">"</span>'
+    )
+
+
+def render_json_lines(pairs: list[tuple[str, str, str | None]]) -> str:
     lines = ['{']
-    for index, (key, value) in enumerate(pairs):
+    for index, (key, value, href) in enumerate(pairs):
         comma = ',' if index < len(pairs) - 1 else ''
         lines.append(
-            f'  <span class="json-key">"{escape(key)}"</span>: <span class="json-str">"{escape(value)}"</span>{comma}'
+            f'  <span class="json-key">"{escape(key)}"</span>: {render_json_value(value, href)}{comma}'
         )
     lines.append('}')
     return '\n'.join(lines)
@@ -190,19 +200,25 @@ def render_html(cfg: dict) -> str:
         for item in cfg.get('stats', [])
     )
 
+    github_url = cfg.get('links', {}).get('github') or ''
+    scholar_url = cfg.get('links', {}).get('scholar') or ''
+    orcid_url = cfg.get('links', {}).get('orcid') or ''
+    cv_url = cfg.get('links', {}).get('cv') or ''
+    website_url = cfg.get('links', {}).get('website') or ''
+
     contact_pairs = [
-        ('message', 'Feel free to reach out!'),
-        ('email', cfg.get('email') or 'your.email@university.edu'),
-        ('location', cfg.get('location') or ''),
-        ('address', cfg.get('address') or ''),
-        ('office', cfg.get('office') or ''),
-        ('github', display_url(cfg.get('links', {}).get('github') or '')),
-        ('scholar', display_url(cfg.get('links', {}).get('scholar') or '')),
-        ('orcid', display_url(cfg.get('links', {}).get('orcid') or '')),
-        ('cv', display_url(cfg.get('links', {}).get('cv') or '')),
-        ('website', display_url(cfg.get('links', {}).get('website') or '')),
+        ('message', 'Feel free to reach out!', None),
+        ('email', cfg.get('email') or 'your.email@university.edu', None),
+        ('location', cfg.get('location') or '', None),
+        ('address', cfg.get('address') or '', None),
+        ('office', cfg.get('office') or '', None),
+        ('github', display_url(github_url), github_url or None),
+        ('scholar', display_url(scholar_url), scholar_url or None),
+        ('orcid', display_url(orcid_url), orcid_url or None),
+        ('cv', display_url(cv_url), cv_url or None),
+        ('website', display_url(website_url), website_url or None),
     ]
-    contact_pairs = [(key, value) for key, value in contact_pairs if str(value).strip()]
+    contact_pairs = [(key, value, href) for key, value, href in contact_pairs if str(value).strip()]
 
     experience_lines = [
         'experience:',

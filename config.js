@@ -51,28 +51,36 @@ const USER_CONFIG = {
       venue: "EuroSys 2026",
       title: "No More Translation at Runtime: LLM-Empowered Static Binary Translation",
       authors: "Zhibo Liu, Huaijin Wang, Wai Kin Wong, Daoyuan Wu, and Shuai Wang.",
-      links: {}
+      links: {
+        paper: "https://doi.org/10.1145/3767295.3803600"
+      }
     },
     {
       year: 2025,
       venue: "CCS 2025",
       title: "The Phantom Menace in PET-Hardened Deep Learning Models: Invisible Configuration-Induced Attacks",
       authors: "Yiteng Peng, Dongwei Xiao, Zhibo Liu, Zhenlan Ji, Daoyuan Wu, Shuai Wang, and Juergen Rahmel.",
-      links: {}
+      links: {
+        paper: "https://doi.org/10.1145/3719027.3765107"
+      }
     },
     {
       year: 2025,
       venue: "CCS 2025",
       title: "An Empirical Study Measuring In-The-Wild Cryptographic Microarchitectural Side-Channel Patches",
       authors: "Sen Deng, Zhibo Liu*, Shuai Wang, and Yinqian Zhang*.",
-      links: {}
+      links: {
+        paper: "https://doi.org/10.1145/3719027.3744881"
+      }
     },
     {
       year: 2025,
       venue: "PLDI 2025",
       title: "Divergence-aware Testing of Graphics Shader Compiler Back-ends",
       authors: "Dongwei Xiao, Shuai Wang, Zhibo Liu, Yiteng Peng, Daoyuan Wu, and Zhendong Su.",
-      links: {},
+      links: {
+        paper: "https://doi.org/10.1145/3729305"
+      },
       note: "Selected by MIT Programming Languages Review for an Invited Talk"
     },
     {
@@ -80,7 +88,9 @@ const USER_CONFIG = {
       venue: "ISSTA 2025",
       title: "DecLLM: LLM-Augmented Recompilable Decompilation for Enabling Programmatic Use of Decompiled Code",
       authors: "Wai Kin Wong, Daoyuan Wu*, Huaijin Wang, Zongjie Li, Zhibo Liu*, Shuai Wang*, Qiyi Tang, Sen Nie, and Shi Wu.",
-      links: {},
+      links: {
+        paper: "https://doi.org/10.1145/3728958"
+      },
       note: "PACMSE 2025 featured article"
     },
     {
@@ -88,21 +98,27 @@ const USER_CONFIG = {
       venue: "ICSE 2025",
       title: "Preserving Privacy in Software Composition Analysis: A Study of Technical Solutions and Enhancements",
       authors: "Huaijin Wang, Zhibo Liu*, Yanbo Dai, Shuai Wang, Qiyi Tang, Sen Nie, and Shi Wu.",
-      links: {}
+      links: {
+        paper: "https://doi.org/10.1109/ICSE55347.2025.00055"
+      }
     },
     {
       year: 2025,
       venue: "ICSE 2025",
       title: "Testing and Understanding Deviation Behaviors in FHE-hardened Machine Learning Models",
       authors: "Yiteng Peng, Daoyuan Wu, Zhibo Liu, Dongwei Xiao, Zhenlan Ji, Juergen Rahmel, and Shuai Wang.",
-      links: {}
+      links: {
+        paper: "https://doi.org/10.1109/ICSE55347.2025.00107"
+      }
     },
     {
       year: 2025,
       venue: "IEEE S&P 2025",
       title: "CipherSteal: Stealing Input Data from TEE-Shielded Neural Networks with Ciphertext Side Channels",
       authors: "Yuanyuan Yuan, Zhibo Liu, Sen Deng, Ynazuo Chen, Shuai Wang, Yinqian Zhang, and Zhendong Su.",
-      links: {},
+      links: {
+        paper: "https://doi.org/10.1109/SP61157.2025.00079"
+      },
       note: "🏆 Distinguished Paper Award"
     },
     {
@@ -110,21 +126,27 @@ const USER_CONFIG = {
       venue: "NDSS 2025",
       title: "MTZK: Testing and Exploring Bugs in Zero-Knowledge (ZK) Compilers",
       authors: "Dongwei Xiao, Zhibo Liu*, Yiteng Peng, and Shuai Wang*",
-      links: {}
+      links: {
+        paper: "https://www.ndss-symposium.org/ndss-paper/mtzk-testing-and-exploring-bugs-in-zero-knowledge-zk-compilers/"
+      }
     },
     {
       year: 2025,
       venue: "NDSS 2025",
       title: "BitShield: Defending Against Bit-Flip Attacks on DNN Executables",
       authors: "Yanzuo Chen, Yuanyuan Yuan, Zhibo Liu, Sihang Hu, Tianxiang Li, and Shuai Wang",
-      links: {}
+      links: {
+        paper: "https://www.ndss-symposium.org/ndss-paper/bitshield-defending-against-bit-flip-attacks-on-dnn-executables/"
+      }
     },
     {
       year: 2025,
       venue: "NDSS 2025",
       title: "Compiled Models, Built-In Exploits: Uncovering Pervasive Bit-Flip Attack Surfaces in DNN Executables",
       authors: "Yanzuo Chen, Zhibo Liu, Yuanyuan Yuan, Sihang Hu, Tianxiang Li, and Shuai Wang",
-      links: {}
+      links: {
+        paper: "https://doi.org/10.14722/ndss.2025.230419"
+      }
     },
     {
       year: 2024,
