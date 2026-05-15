@@ -23,7 +23,7 @@
     --dot-green: #27c93f;
     --border: #1a3a1a;
     --hl: #ffff00;
-    --font: 'JetBrains Mono', 'Fira Code', monospace;
+    --font: ui-monospace, 'SFMono-Regular', 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
     --scanline-opacity: 0.03;
 }
 /* ---- Global Resets ---- */

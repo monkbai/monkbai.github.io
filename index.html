@@ -3,21 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academic homepage of Zhibo Liu — Postdoctoral researcher in binary analysis, reverse engineering, and software security.">
+    <meta name="description" content="Associate Professor at the School of Computer Science, Nanjing University.">
     <meta property="og:title" content="Zhibo Liu | Academic Homepage">
-    <meta property="og:description" content="Postdoctoral researcher in binary analysis, reverse engineering, and software security.">
-    <!-- Replace favicon.svg with your own icon file (keep the same name for easiest update) -->
+    <meta property="og:description" content="Associate Professor at the School of Computer Science, Nanjing University.">
     <link rel="icon" href="pic/favicon.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="pic/favicon.svg" type="image/svg+xml">
-    <title>zhiboliu@academia ~ %</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>zhibo_liu@academia ~ %</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light' || savedTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+    <script type="application/ld+json">
+{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Person&quot;,
+  &quot;name&quot;: &quot;Zhibo Liu (刘智博)&quot;,
+  &quot;jobTitle&quot;: &quot;Associate Professor&quot;,
+  &quot;affiliation&quot;: {
+    &quot;@type&quot;: &quot;Organization&quot;,
+    &quot;name&quot;: &quot;School of Computer Science, Nanjing University&quot;
+  },
+  &quot;url&quot;: &quot;https://monkbai.github.io/&quot;,
+  &quot;sameAs&quot;: [
+    &quot;https://github.com/monkbai&quot;,
+    &quot;https://scholar.google.com/citations?hl=en&amp;user=kIsmHd4AAAAJ&quot;,
+    &quot;https://orcid.org/0000-0002-7872-1129&quot;
+  ],
+  &quot;address&quot;: &quot;163 Xianlin Avenue, Qixia District, Nanjing, Jiangsu, China&quot;
+}
+    </script>
 </head>
 <body>
+    <!-- Generated from config.js by tools/render_static_page.py -->
     <a href="#about" class="skip-link">Skip to main content</a>
-    <!-- Terminal Window Chrome -->
     <div class="terminal-window">
         <div class="terminal-titlebar">
             <div class="terminal-dots">
@@ -42,20 +63,16 @@
         </div>
 
         <main role="main" class="terminal-body">
-            <!-- Scanline overlay -->
             <div class="scanline"></div>
 
-            <!-- About: whoami -->
             <section id="about" class="terminal-section">
                 <div class="command-line">
-                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="prompt">zhiboliu@nju</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd" data-cmd="whoami --verbose">whoami --verbose</span>
                 </div>
                 <div class="command-output whoami-output">
                     <div class="hero-photo">
-                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-                        </svg>
+                        <img src="pic/photo1.png" alt="Zhibo Liu profile photo" loading="eager" decoding="async" data-photo-light="pic/photo1.png" data-photo-dark="pic/photo2.png">
                     </div>
                     <pre class="ascii-art">
  ______     _ _             _     _       
@@ -64,113 +81,182 @@
  / /_| | | | | |_) | (_) | | |___| | |_| |
 /____|_| |_|_|_.__/ \___/  |_____|_|\__,_|
                     </pre>
-                                        <div class="nameplate" id="cfg-display-name">Zhibo Liu (刘智博)</div>
+                    <div class="nameplate" id="cfg-display-name">Zhibo Liu (刘智博)</div>
                     <div class="info-block">
                         <div class="info-row">
                             <span class="info-key">ROLE</span>
-                            <span class="info-val" id="cfg-role">PhD Candidate @ Your University</span>
+                            <span class="info-val" id="cfg-role">Associate Professor @ School of Computer Science, Nanjing University</span>
                         </div>
                         <div class="info-row">
                             <span class="info-key">LOCATION</span>
-                            <span class="info-val" id="cfg-location">Hong Kong, China</span>
+                            <span class="info-val" id="cfg-location">Nanjing, China</span>
                         </div>
                         <div class="info-row">
                             <span class="info-key">FOCUS</span>
-                            <span class="info-val" id="cfg-focus"><span class="hl">your research area</span>, <span class="hl">machine learning</span>, <span class="hl">AI</span></span>
+                            <span class="info-val" id="cfg-focus"><span class="hl">Computer Security</span>, <span class="hl">Binary Analysis</span>, <span class="hl">Software Reverse Engineering</span>, <span class="hl">Software Engineering</span></span>
                         </div>
                         <div class="info-row">
                             <span class="info-key">STATS</span>
-                            <span class="info-val" id="cfg-stats"><span class="stat-num">10+</span> papers · <span class="stat-num">100+</span> citations · <span class="stat-num">5+</span> projects</span>
+                            <span class="info-val" id="cfg-stats"><span class="stat-num">29</span> publications · <span class="stat-num">2</span> distinguished paper awards · <span class="stat-num">1</span> postdoctoral fellowship</span>
                         </div>
                         <div class="info-row">
                             <span class="info-key">UPDATED</span>
-                            <span class="info-val" id="cfg-updated">July 2025</span>
+                            <span class="info-val" id="cfg-updated">March 2026</span>
                         </div>
                     </div>
-                    <div class="bio-block" id="cfg-bio"></div>
-                    <div class="recruit-banner" id="cfg-recruitment"></div>
+                    <div class="bio-block" id="cfg-bio"><p>Zhibo Liu has been an Associate Professor in the School of Computer Science at Nanjing University since 2026.</p><p>Previously, he was a Postdoctoral Researcher at the Hong Kong University of Science and Technology (HKUST) from 2023 to 2025, supported by the HK RGC Postdoctoral Fellowship Scheme.</p><p>He obtained his Ph.D. in 2023 from the Department of Computer Science and Engineering at HKUST, under the supervision of <a href="https://www.cse.ust.hk/~shuaiw/" target="_blank" rel="noopener noreferrer">Prof. Shuai Wang</a>. Before joining HKUST, he received his B.Eng. degree from Nankai University in 2019.</p><p>His current research focuses on software reverse engineering and binary analysis, with broader interests in computer security and software engineering.</p></div>
+                    <div class="recruit-banner" id="cfg-recruitment"><span class="recruit-icon">📣</span><span class="recruit-text">I am looking for motivated students and collaborators in software security and software engineering. Feel free to email me if you are interested in working together!</span></div>
                 </div>
             </section>
 
-            <!-- Contact: echo -->
             <section id="contact" class="terminal-section">
                 <div class="command-line">
-                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="prompt">zhiboliu@nju</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/contact.json | jq .</span>
                 </div>
                 <div class="command-output">
-                                        <pre class="json-output" id="cfg-contact">{
+                    <pre class="json-output" id="cfg-contact">{
   <span class="json-key">"message"</span>: <span class="json-str">"Feel free to reach out!"</span>,
-  <span class="json-key">"email"</span>:   <span class="json-str">"your.email@university.edu"</span>,
-  <span class="json-key">"github"</span>:  <span class="json-str">"github.com/yourname"</span>
+  <span class="json-key">"email"</span>: <span class="json-str">"zhiboliu [at] nju [dot] edu [dot] cn"</span>,
+  <span class="json-key">"location"</span>: <span class="json-str">"Nanjing, China"</span>,
+  <span class="json-key">"address"</span>: <span class="json-str">"163 Xianlin Avenue, Qixia District, Nanjing, Jiangsu, China"</span>,
+  <span class="json-key">"office"</span>: <span class="json-str">"Xianlin Campus, Computer Science and Technology Building 706"</span>,
+  <span class="json-key">"github"</span>: <span class="json-str">"github.com/monkbai"</span>,
+  <span class="json-key">"scholar"</span>: <span class="json-str">"scholar.google.com/citations?hl=en&amp;user=kIsmHd4AAAAJ"</span>,
+  <span class="json-key">"orcid"</span>: <span class="json-str">"orcid.org/0000-0002-7872-1129"</span>,
+  <span class="json-key">"cv"</span>: <span class="json-str">"files/CV-Zhibo_Liu.pdf"</span>,
+  <span class="json-key">"website"</span>: <span class="json-str">"monkbai.github.io"</span>
 }</pre>
                 </div>
             </section>
 
-            <!-- News: tail -f -->
             <section id="news" class="terminal-section">
                 <div class="command-line">
-                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="prompt">zhiboliu@nju</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">tail -f ~/news.log</span>
                 </div>
                 <div class="command-output" id="cfg-news">
                     <div class="log-entry">
+                        <span class="log-time">2026.02</span>
                         <span class="log-level log-new">NEW</span>
-                        <span class="log-msg">Your news item here.</span>
+                        <span class="log-msg">Joined Nanjing University.</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2025.05</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">CipherSteal (IEEE S&amp;P 2025) received a Distinguished Paper Award.</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2024.12</span>
+                        <span class="log-level log-talk">TALK</span>
+                        <span class="log-msg">Black Hat Europe talk on side-channel and bit-flip attack surfaces in DNN executables.</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2024.03</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">Received HKUST CSE Best PhD Dissertation Award (2022-23) - Honorable Mention.</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2023.12</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">Supported by HK RGC Postdoctoral Fellowship Scheme (PDFS).</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2023.09</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">ACM SIGSOFT Distinguished Paper Award at ASE 2023.</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2023.08</span>
+                        <span class="log-level log-talk">TALK</span>
+                        <span class="log-msg">Presented &#x27;BTD: Unleashing the Power of Decompilation for x86 Deep Neural Network Executables&#x27; at Black Hat USA 2023.</span>
                     </div>
                 </div>
             </section>
 
-            <!-- Experience: cat -->
             <section id="experience" class="terminal-section">
                 <div class="command-line">
-                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="prompt">zhiboliu@nju</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/experience.yml</span>
                 </div>
                 <div class="command-output">
-                    <pre class="yaml-output" id="cfg-experience"><span class="yaml-key">education:</span>
-  - <span class="yaml-key">degree:</span> <span class="yaml-val">Ph.D. in Computer Science</span>
-    <span class="yaml-key">institution:</span> <span class="yaml-val">Your University</span>
-    <span class="yaml-key">period:</span> <span class="yaml-val">2020 - Present</span>
-    <span class="yaml-key">status:</span> <span class="yaml-val yaml-active">active</span></pre>
+                    <pre class="yaml-output" id="cfg-experience"><span class="yaml-key">experience:</span>
+  - <span class="yaml-key">role:</span><span class="yaml-val"> Associate Professor</span>
+    <span class="yaml-key">institution:</span><span class="yaml-val"> School of Computer Science, Nanjing University</span>
+    <span class="yaml-key">period:</span><span class="yaml-val"> Jan 2026 – Present</span>
+  - <span class="yaml-key">role:</span><span class="yaml-val"> Postdoctoral Researcher</span>
+    <span class="yaml-key">institution:</span><span class="yaml-val"> Hong Kong University of Science and Technology</span>
+    <span class="yaml-key">period:</span><span class="yaml-val"> Oct 2023 – Dec 2025</span>
+<span class="yaml-key">education:</span>
+  - <span class="yaml-key">degree:</span><span class="yaml-val"> Ph.D. in Computer Science</span>
+    <span class="yaml-key">institution:</span><span class="yaml-val"> Hong Kong University of Science and Technology</span>
+    <span class="yaml-key">period:</span><span class="yaml-val"> Sept 2019 – Sept 2023</span>
+  - <span class="yaml-key">degree:</span><span class="yaml-val"> B.E. in Information Security</span>
+    <span class="yaml-key">institution:</span><span class="yaml-val"> Nankai University</span>
+    <span class="yaml-key">period:</span><span class="yaml-val"> Sept 2015 – June 2019</span></pre>
                 </div>
             </section>
 
-            <!-- Services -->
             <section id="services" class="terminal-section">
                 <div class="command-line">
-                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="prompt">zhiboliu@nju</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/services.md</span>
                 </div>
                 <div class="command-output" id="cfg-services">
                     <div class="service-group">
+                        <div class="service-title">Program Committee Member</div>
+                        <ul class="service-list">
+                            <li class="service-item">2026: CCS</li>
+                        </ul>
+                    </div>
+                    <div class="service-group">
                         <div class="service-title">Reviewer</div>
                         <ul class="service-list">
-                            <li class="service-item">2025: TDSC, TPDS</li>
+                            <li class="service-item">2026: TDSC</li><li class="service-item">2025: TDSC, TIFS, TOSEM, TPDS</li><li class="service-item">2024: TDSC</li><li class="service-item">2023: TIFS, TDSC</li>
+                        </ul>
+                    </div>
+                    <div class="service-group">
+                        <div class="service-title">Artifact Evaluation Committee</div>
+                        <ul class="service-list">
+                            <li class="service-item">2023: USENIX Security, ISSTA</li><li class="service-item">2022: ISSTA, OSDI, USENIX ATC, WiSec</li>
+                        </ul>
+                    </div>
+                    <div class="service-group">
+                        <div class="service-title">External Reviewer</div>
+                        <ul class="service-list">
+                            <li class="service-item">2025: IEEE S&amp;P</li><li class="service-item">2024: IEEE S&amp;P, USENIX Security</li><li class="service-item">2023: IEEE S&amp;P, USENIX Security, ISSTA, NeurIPS, SANER ERA Track</li><li class="service-item">2022: ASE, NDSS BAR, CCS, AsiaCCS</li><li class="service-item">2020: TIFS, ICICS, ICSE SEIP</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- Teaching -->
             <section id="teaching" class="terminal-section">
                 <div class="command-line">
-                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="prompt">zhiboliu@nju</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/teaching.log</span>
                 </div>
                 <div class="command-output" id="cfg-teaching">
                     <div class="log-entry">
                         <span class="log-time">2023</span>
                         <span class="log-level log-info">TA</span>
-                        <span class="log-msg">Teaching Assistant for COMP 3632: Principles of Cybersecurity.</span>
+                        <span class="log-msg">Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Spring 2023)</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2020</span>
+                        <span class="log-level log-info">TA</span>
+                        <span class="log-msg">Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Fall 2020)</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2020</span>
+                        <span class="log-level log-info">TA</span>
+                        <span class="log-msg">Teaching Assistant for COMP 3632: Principles of Cybersecurity (HKUST, Spring 2020)</span>
                     </div>
                 </div>
             </section>
 
-            <!-- Publications: papers -->
             <section id="publications" class="terminal-section">
                 <div class="command-line">
-                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~/papers</span><span class="prompt-char">$</span>
+                    <span class="prompt">zhiboliu@nju</span><span class="prompt-sep">:</span><span class="prompt-dir">~/papers</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">ls --sort=year --desc</span>
                 </div>
                 <div class="command-output" id="cfg-publications">
@@ -180,66 +266,458 @@
                         <span class="ls-col ls-name">paper</span>
                     </div>
                     <div class="ls-row">
+                        <span class="ls-col ls-date">2026</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link no-paper-link" target="_blank" rel="noopener noreferrer">No More Translation at Runtime: LLM-Empowered Static Binary Translation</a>
+                            <span class="file-meta">
+                                <span class="file-authors"><strong>Zhibo Liu</strong>, Huaijin Wang, Wai Kin Wong, Daoyuan Wu, and Shuai Wang.</span>
+                                <span class="file-venue">EuroSys 2026</span>
+                                
+                            </span>
+                            <span class="file-actions"></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
                         <span class="ls-col ls-date">2025</span>
                         <span class="ls-col ls-name">
-                            <a href="#" class="file-link">Your Paper Title Here</a>
+                            <a href="#" class="file-link no-paper-link" target="_blank" rel="noopener noreferrer">The Phantom Menace in PET-Hardened Deep Learning Models: Invisible Configuration-Induced Attacks</a>
                             <span class="file-meta">
-                                <span class="file-authors"><strong>Your Name</strong>, Co-Author 1, Co-Author 2</span>
-                                <span class="file-venue">Conference/Journal Name 2025</span>
+                                <span class="file-authors">Yiteng Peng, Dongwei Xiao, <strong>Zhibo Liu</strong>, Zhenlan Ji, Daoyuan Wu, Shuai Wang, and Juergen Rahmel.</span>
+                                <span class="file-venue">CCS 2025</span>
+                                
                             </span>
-                            <span class="file-actions">
-                                <a href="#" class="action-link">[paper]</a>
-                                <a href="#" class="action-link">[code]</a>
+                            <span class="file-actions"></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2025</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link no-paper-link" target="_blank" rel="noopener noreferrer">An Empirical Study Measuring In-The-Wild Cryptographic Microarchitectural Side-Channel Patches</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Sen Deng, <strong>Zhibo Liu</strong>*, Shuai Wang, and Yinqian Zhang*.</span>
+                                <span class="file-venue">CCS 2025</span>
+                                
                             </span>
+                            <span class="file-actions"></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2025</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link no-paper-link" target="_blank" rel="noopener noreferrer">Divergence-aware Testing of Graphics Shader Compiler Back-ends</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Dongwei Xiao, Shuai Wang, <strong>Zhibo Liu</strong>, Yiteng Peng, Daoyuan Wu, and Zhendong Su.</span>
+                                <span class="file-venue">PLDI 2025</span>
+                                <span class="file-note">Selected by MIT Programming Languages Review for an Invited Talk</span>
+                            </span>
+                            <span class="file-actions"></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2025</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link no-paper-link" target="_blank" rel="noopener noreferrer">DecLLM: LLM-Augmented Recompilable Decompilation for Enabling Programmatic Use of Decompiled Code</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Wai Kin Wong, Daoyuan Wu*, Huaijin Wang, Zongjie Li, <strong>Zhibo Liu</strong>*, Shuai Wang*, Qiyi Tang, Sen Nie, and Shi Wu.</span>
+                                <span class="file-venue">ISSTA 2025</span>
+                                <span class="file-note">PACMSE 2025 featured article</span>
+                            </span>
+                            <span class="file-actions"></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2025</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link no-paper-link" target="_blank" rel="noopener noreferrer">Preserving Privacy in Software Composition Analysis: A Study of Technical Solutions and Enhancements</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Huaijin Wang, <strong>Zhibo Liu</strong>*, Yanbo Dai, Shuai Wang, Qiyi Tang, Sen Nie, and Shi Wu.</span>
+                                <span class="file-venue">ICSE 2025</span>
+                                
+                            </span>
+                            <span class="file-actions"></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2025</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link no-paper-link" target="_blank" rel="noopener noreferrer">Testing and Understanding Deviation Behaviors in FHE-hardened Machine Learning Models</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Yiteng Peng, Daoyuan Wu, <strong>Zhibo Liu</strong>, Dongwei Xiao, Zhenlan Ji, Juergen Rahmel, and Shuai Wang.</span>
+                                <span class="file-venue">ICSE 2025</span>
+                                
+                            </span>
+                            <span class="file-actions"></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2025</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link no-paper-link" target="_blank" rel="noopener noreferrer">CipherSteal: Stealing Input Data from TEE-Shielded Neural Networks with Ciphertext Side Channels</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Yuanyuan Yuan, <strong>Zhibo Liu</strong>, Sen Deng, Ynazuo Chen, Shuai Wang, Yinqian Zhang, and Zhendong Su.</span>
+                                <span class="file-venue">IEEE S&amp;P 2025</span>
+                                <span class="file-note">🏆 Distinguished Paper Award</span>
+                            </span>
+                            <span class="file-actions"></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2025</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link no-paper-link" target="_blank" rel="noopener noreferrer">MTZK: Testing and Exploring Bugs in Zero-Knowledge (ZK) Compilers</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Dongwei Xiao, <strong>Zhibo Liu</strong>*, Yiteng Peng, and Shuai Wang*</span>
+                                <span class="file-venue">NDSS 2025</span>
+                                
+                            </span>
+                            <span class="file-actions"></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2025</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link no-paper-link" target="_blank" rel="noopener noreferrer">BitShield: Defending Against Bit-Flip Attacks on DNN Executables</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Yanzuo Chen, Yuanyuan Yuan, <strong>Zhibo Liu</strong>, Sihang Hu, Tianxiang Li, and Shuai Wang</span>
+                                <span class="file-venue">NDSS 2025</span>
+                                
+                            </span>
+                            <span class="file-actions"></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2025</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link no-paper-link" target="_blank" rel="noopener noreferrer">Compiled Models, Built-In Exploits: Uncovering Pervasive Bit-Flip Attack Surfaces in DNN Executables</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Yanzuo Chen, <strong>Zhibo Liu</strong>, Yuanyuan Yuan, Sihang Hu, Tianxiang Li, and Shuai Wang</span>
+                                <span class="file-venue">NDSS 2025</span>
+                                
+                            </span>
+                            <span class="file-actions"></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2024</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://www.blackhat.com/eu-24/briefings/schedule/#the-devil-is-in-the-micro--architectures-uncovering-new-side-channel-and-bit-flip-attack-surfaces-in-dnn-executables-42018" class="file-link" target="_blank" rel="noopener noreferrer">The Devil is in the (Micro-) Architectures: Uncovering New Side-Channel and Bit-Flip Attack Surfaces in DNN Executables</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Yanzuo Chen, <strong>Zhibo Liu</strong> (co-speaker), Yuanyuan Yuan, Tianxiang Li, Sihang Hu, Zhihui Lin, and Shuai Wang</span>
+                                <span class="file-venue">Black Hat Europe 2024</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://www.blackhat.com/eu-24/briefings/schedule/#the-devil-is-in-the-micro--architectures-uncovering-new-side-channel-and-bit-flip-attack-surfaces-in-dnn-executables-42018" class="action-link" target="_blank" rel="noopener noreferrer">[talk]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2024</span>
+                        <span class="ls-col ls-name">
+                            <a href="files/deepcache.pdf" class="file-link" target="_blank" rel="noopener noreferrer">DeepCache: Revisiting Cache Side-Channel Attacks in Deep Neural Networks Executables</a>
+                            <span class="file-meta">
+                                <span class="file-authors"><strong>Zhibo Liu</strong>, Yuanyuan Yuan, Yanzuo Chen, Sihang Hu, Tianxiang Li, and Shuai Wang</span>
+                                <span class="file-venue">CCS 2024</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="files/deepcache.pdf" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a><a href="files/deepcache.pdf" class="action-link" target="_blank" rel="noopener noreferrer">[fixed_paper]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2024</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://dl.acm.org/doi/10.1145/3658644.3690317" class="file-link" target="_blank" rel="noopener noreferrer">HyperTheft: Thieving Model Weights from TEE-Shielded Neural Networks via Ciphertext Side Channels</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Yuanyuan Yuan, <strong>Zhibo Liu</strong>, Sen Deng, Yanzuo Chen, Shuai Wang, Yinqian Zhang, and Zhendong Su</span>
+                                <span class="file-venue">CCS 2024</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://dl.acm.org/doi/10.1145/3658644.3690317" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2024</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10629030" class="file-link" target="_blank" rel="noopener noreferrer">Are We There Yet? Filling the Gap Between ML-Based Binary Similarity Analysis and Binary Software Composition Analysis</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Huaijin Wang, <strong>Zhibo Liu</strong>*, Shuai Wang*, Ying Wang, Qiyi Tang, Sen Nie, Shi Wu</span>
+                                <span class="file-venue">Euro S&amp;P 2024</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://ieeexplore.ieee.org/abstract/document/10629030" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2024</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://dl.acm.org/doi/10.1145/3643779" class="file-link" target="_blank" rel="noopener noreferrer">DTD: Comprehensive and Scalable Testing for Debuggers</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Hongyi Lu, <strong>Zhibo Liu</strong>*, Shuai Wang, and Fengwei Zhang*</span>
+                                <span class="file-venue">FSE 2024</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://dl.acm.org/doi/10.1145/3643779" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2024</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://dl.acm.org/doi/10.1145/3643781" class="file-link" target="_blank" rel="noopener noreferrer">Metamorphic Testing of Secure Multi-Party Computation (MPC) Compilers</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Yichen Li, Dongwei Xiao, <strong>Zhibo Liu</strong>, Qi Pang, and Shuai Wang</span>
+                                <span class="file-venue">FSE 2024</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://dl.acm.org/doi/10.1145/3643781" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2024</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://ieeexplore.ieee.org/document/10400834" class="file-link" target="_blank" rel="noopener noreferrer">Evaluating C/C++ Vulnerability Detectability of Query-Based Static Application Security Testing Tools</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Zongjie Li, <strong>Zhibo Liu</strong>, Wai Kin Wong, Pingchuan Ma, and Shuai Wang</span>
+                                <span class="file-venue">TDSC 2024</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://ieeexplore.ieee.org/document/10400834" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2023</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://arxiv.org/abs/2307.10818" class="file-link" target="_blank" rel="noopener noreferrer">PHYFU: Fuzzing Modern Physics Simulation Engines</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Dongwei Xiao, <strong>Zhibo Liu</strong>, Shuai Wang.</span>
+                                <span class="file-venue">ASE 2023</span>
+                                <span class="file-note">🏆 ACM SIGSOT Distinguished Paper Award</span>
+                            </span>
+                            <span class="file-actions"><a href="https://arxiv.org/abs/2307.10818" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2023</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://www.blackhat.com/us-23/briefings/schedule/index.html#btd-unleashing-the-power-of-decompilation-for-x-deep-neural-network-executables-33028" class="file-link" target="_blank" rel="noopener noreferrer">BTD: Unleashing the Power of Decompilation for x86 Deep Neural Network Executables</a>
+                            <span class="file-meta">
+                                <span class="file-authors"><strong>Zhibo Liu</strong>, Yuanyuan Yuan, Xiaofei Xie, Tianxiang Li, Wenqiang Li, and Shuai Wang.</span>
+                                <span class="file-venue">Black Hat USA 2023</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://www.blackhat.com/us-23/briefings/schedule/index.html#btd-unleashing-the-power-of-decompilation-for-x-deep-neural-network-executables-33028" class="action-link" target="_blank" rel="noopener noreferrer">[talk]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2023</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://dl.acm.org/doi/10.1145/3597926.3598068" class="file-link" target="_blank" rel="noopener noreferrer">Exploring Missed Optimizations in WebAssembly Optimizers</a>
+                            <span class="file-meta">
+                                <span class="file-authors"><strong>Zhibo Liu</strong>, Dongwei Xiao, Zongjie Li, Shuai Wang, Wei Meng.</span>
+                                <span class="file-venue">ISSTA 2023</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://dl.acm.org/doi/10.1145/3597926.3598068" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a><a href="files/issta23-ditwo.pdf" class="action-link" target="_blank" rel="noopener noreferrer">[preprint]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2023</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://ieeexplore.ieee.org/document/10172737" class="file-link" target="_blank" rel="noopener noreferrer">Metamorphic Shader Fusion for Testing Graphics Shader Compilers</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Dongwei Xiao, <strong>Zhibo Liu</strong>, Shuai Wang.</span>
+                                <span class="file-venue">ICSE 2023</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://ieeexplore.ieee.org/document/10172737" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2023</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://arxiv.org/abs/2208.08289" class="file-link" target="_blank" rel="noopener noreferrer">CCTEST: Testing and Repairing Code Completion Systems</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Zongjie Li, Chaozheng Wang, <strong>Zhibo Liu</strong>, Haoxuan Wang, Dong Chen, Shuai Wang, Cuiyun Gao.</span>
+                                <span class="file-venue">ICSE 2023</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://arxiv.org/abs/2208.08289" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2023</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://arxiv.org/abs/2209.14952" class="file-link" target="_blank" rel="noopener noreferrer">CacheQL: Quantifying and Localizing Cache Side-Channel Vulnerabilities in Production Software</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Yuanyuan Yuan, <strong>Zhibo Liu</strong>, Shuai Wang.</span>
+                                <span class="file-venue">USENIX Security 2023</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://arxiv.org/abs/2209.14952" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a><a href="https://github.com/Yuanyuan-Yuan/CacheQL" class="action-link" target="_blank" rel="noopener noreferrer">[code]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2023</span>
+                        <span class="ls-col ls-name">
+                            <a href="files/sec23-btd-badges.pdf" class="file-link" target="_blank" rel="noopener noreferrer">Decompiling x86 Deep Neural Network Executables</a>
+                            <span class="file-meta">
+                                <span class="file-authors"><strong>Zhibo Liu</strong>, Yuanyuan Yuan, Shuai Wang, Xiaofei Xie, Lei Ma.</span>
+                                <span class="file-venue">USENIX Security 2023</span>
+                                <span class="file-note">🎉 Artifact badges: Available, Functional, Reproduced</span>
+                            </span>
+                            <span class="file-actions"><a href="files/sec23-btd-badges.pdf" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a><a href="https://arxiv.org/abs/2210.01075" class="action-link" target="_blank" rel="noopener noreferrer">[extended]</a><a href="https://github.com/monkbai/DNN-decompiler" class="action-link" target="_blank" rel="noopener noreferrer">[code]</a><a href="https://github.com/monkbai/DNN-decompiler" class="action-link" target="_blank" rel="noopener noreferrer">[repo]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2022</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://ieeexplore.ieee.org/document/9707874" class="file-link" target="_blank" rel="noopener noreferrer">Enhancing DNN-Based Binary Code Function Search With Low-Cost Equivalence Checking</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Huaijin Wang, Pingchuan Ma, Yuanyuan Yuan, <strong>Zhibo Liu</strong>, Shuai Wang, Qiyi Tang, Sen Nie, Shi Wu.</span>
+                                <span class="file-venue">TSE 2022</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://ieeexplore.ieee.org/document/9707874" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a><a href="https://github.com/computer-analysis/BinUSE" class="action-link" target="_blank" rel="noopener noreferrer">[code]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2022</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://ieeexplore.ieee.org/document/9722877" class="file-link" target="_blank" rel="noopener noreferrer">NeuralD: Detecting Indistinguishability Violations of Oblivious RAM with Neural Distinguishers</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Pingchuan Ma, <strong>Zhibo Liu</strong>, Yuanyuan Yuan, and Shuai Wang.</span>
+                                <span class="file-venue">IEEE T-IFS 2022</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://ieeexplore.ieee.org/document/9722877" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a><a href="https://github.com/pckennethma/NeuralD" class="action-link" target="_blank" rel="noopener noreferrer">[code]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2022</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3508035" class="file-link" target="_blank" rel="noopener noreferrer">Metamorphic Testing of Deep Learning Compilers</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Dongwei Xiao, <strong>Zhibo Liu</strong>, Yuanyuan Yuan, Qi Pang, and Shuai Wang.</span>
+                                <span class="file-venue">SIGMETRICS 2022</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://dl.acm.org/doi/abs/10.1145/3508035" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a><a href="https://github.com/Wilbur-Django/Testing-DNN-Compilers" class="action-link" target="_blank" rel="noopener noreferrer">[code]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2022</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://ieeexplore.ieee.org/document/9833799" class="file-link" target="_blank" rel="noopener noreferrer">SoK: Demystifying Binary Lifters Through the Lens of Downstream Applications</a>
+                            <span class="file-meta">
+                                <span class="file-authors"><strong>Zhibo Liu</strong>, Yuanyuan Yuan, Shuai Wang, Yuyan Bao.</span>
+                                <span class="file-venue">IEEE S&amp;P 2022</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://ieeexplore.ieee.org/document/9833799" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a><a href="https://github.com/monkbai/ir_lifting_data" class="action-link" target="_blank" rel="noopener noreferrer">[artifact]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2022</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://arxiv.org/abs/2209.04610" class="file-link" target="_blank" rel="noopener noreferrer">Cache Refinement Type for Side-channel Detection of Cryptographic Software</a>
+                            <span class="file-meta">
+                                <span class="file-authors">Ke Jiang, Yuyan Bao, Shuai Wang, <strong>Zhibo Liu</strong>, Tianwei Zhang.</span>
+                                <span class="file-venue">CCS 2022</span>
+                                
+                            </span>
+                            <span class="file-actions"><a href="https://arxiv.org/abs/2209.04610" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a></span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2020</span>
+                        <span class="ls-col ls-name">
+                            <a href="https://dl.acm.org/doi/10.1145/3395363.3397370" class="file-link" target="_blank" rel="noopener noreferrer">How far we have come: testing decompilation correctness of C decompilers</a>
+                            <span class="file-meta">
+                                <span class="file-authors"><strong>Zhibo Liu</strong>, Shuai Wang.</span>
+                                <span class="file-venue">ISSTA 2020</span>
+                                <span class="file-note">🎉 Artifact badge: Functional</span>
+                            </span>
+                            <span class="file-actions"><a href="https://dl.acm.org/doi/10.1145/3395363.3397370" class="action-link" target="_blank" rel="noopener noreferrer">[paper]</a><a href="https://github.com/monkbai/DecFuzzer" class="action-link" target="_blank" rel="noopener noreferrer">[code]</a></span>
                         </span>
                     </div>
                 </div>
             </section>
 
-            <!-- Honors -->
             <section id="honors" class="terminal-section">
                 <div class="command-line">
-                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="prompt">zhiboliu@nju</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/honors.log</span>
                 </div>
                 <div class="command-output" id="cfg-honors">
                     <div class="log-entry">
+                        <span class="log-time">2025</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">IEEE S&amp;P Distinguished Paper Award</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2024</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">Black Hat Europe Briefing Speaker (London, UK)</span>
+                    </div>
+                    <div class="log-entry">
                         <span class="log-time">2023</span>
-                        <span class="log-level log-new">AWARD</span>
-                        <span class="log-msg">HK RGC Postdoctoral Fellowship Scheme.</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">HK RGC Postdoctoral Fellowship Scheme</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2023</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">HKUST CSE Best PhD Dissertation Award (2022-23) - Honorable Mention</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2023</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">ACM SIGSOFT Distinguished Paper Award at ASE 2023</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2023</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">Black Hat USA Briefing Speaker (Las Vegas, USA)</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2019-2023</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">HKUST Postgraduate Studentship</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2022</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">HKUST Research Travel Grant</span>
+                    </div>
+                    <div class="log-entry">
+                        <span class="log-time">2022</span>
+                        <span class="log-level log-award">AWARD</span>
+                        <span class="log-msg">HKUST RedBird Academic Excellence Award</span>
                     </div>
                 </div>
             </section>
 
-            <!-- Misc -->
             <section id="misc" class="terminal-section">
                 <div class="command-line">
-                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="prompt">zhiboliu@nju</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/misc.txt</span>
                 </div>
                 <div class="command-output" id="cfg-misc">
-                    <div class="misc-item">Reading: The Good, the Bad, and the Bye Bye</div>
+                    <div class="misc-item"><a href="https://reyammer.io/blog/2020/10/03/the-good-the-bad-and-the-bye-bye-why-i-left-my-tenured-academic-job/" target="_blank" rel="noopener noreferrer">The Good, the Bad, and the Bye Bye</a> <span class="misc-note">by Yanick &#x27;reyammer&#x27; Fratantonio</span></div>
                 </div>
             </section>
 
-            <!-- Interactive prompt -->
             <div class="terminal-prompt-line">
-                <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                <span class="prompt">zhiboliu@nju</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                 <span class="cursor">█</span>
             </div>
 
             <div class="clustrmaps-controls">
-                <button type="button" class="clustrmaps-toggle" id="clustrmapsToggle" aria-controls="clustrmapsPanel" aria-expanded="false">
+                <button type="button" class="clustrmaps-toggle" id="clustrmapsToggle" aria-controls="clustrmapsPanel" aria-expanded="false" data-map-src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs">
                     Show visitor map
                 </button>
             </div>
-            <div class="clustrmaps-container" id="clustrmapsPanel" hidden>
-                <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs"></script>
-            </div>
+            <div class="clustrmaps-container" id="clustrmapsPanel" hidden></div>
         </main>
     </div>
 
-    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

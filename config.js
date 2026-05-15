@@ -141,8 +141,8 @@ const USER_CONFIG = {
       title: "DeepCache: Revisiting Cache Side-Channel Attacks in Deep Neural Networks Executables",
       authors: "Zhibo Liu, Yuanyuan Yuan, Yanzuo Chen, Sihang Hu, Tianxiang Li, and Shuai Wang",
       links: {
-        paper: "https://github.com/monkbai/monkbai.github.io/blob/master/files/deepcache.pdf",
-        fixed_paper: "https://github.com/monkbai/monkbai.github.io/blob/master/files/deepcache.pdf"
+        paper: "files/deepcache.pdf",
+        fixed_paper: "files/deepcache.pdf"
       }
     },
     {
@@ -216,7 +216,7 @@ const USER_CONFIG = {
       authors: "Zhibo Liu, Dongwei Xiao, Zongjie Li, Shuai Wang, Wei Meng.",
       links: {
         paper: "https://dl.acm.org/doi/10.1145/3597926.3598068",
-        preprint: "https://github.com/monkbai/monkbai.github.io/blob/master/files/issta23-ditwo.pdf"
+        preprint: "files/issta23-ditwo.pdf"
       }
     },
     {
@@ -253,7 +253,7 @@ const USER_CONFIG = {
       title: "Decompiling x86 Deep Neural Network Executables",
       authors: "Zhibo Liu, Yuanyuan Yuan, Shuai Wang, Xiaofei Xie, Lei Ma.",
       links: {
-        paper: "https://github.com/monkbai/monkbai.github.io/blob/master/files/sec23-btd-badges.pdf",
+        paper: "files/sec23-btd-badges.pdf",
         extended: "https://arxiv.org/abs/2210.01075",
         code: "https://github.com/monkbai/DNN-decompiler"
       },
