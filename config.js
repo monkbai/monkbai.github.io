@@ -30,7 +30,7 @@ const USER_CONFIG = {
   photoDark: "pic/photo2.png",
 
   stats: [
-    { value: "29", label: "Publications" },
+    { value: "30", label: "Publications" },
     { value: "2", label: "Distinguished Paper Awards" },
     { value: "1", label: "Postdoctoral Fellowship" }
   ],
@@ -46,6 +46,14 @@ const USER_CONFIG = {
   paperNote: "(* denotes corresponding author)",
 
   publications: [
+    {
+      year: 2026,
+      venue: "ISSTA 2026",
+      title: "The Unseen Delta: Characterizing the Compiler Optimization Landscape via Top-Down Differential Analysis",
+      authors: "Zhibo Liu, and Huaijin Wang, and Shuai Wang.",
+      links: {
+      }
+    },
     {
       year: 2026,
       venue: "EuroSys 2026",
@@ -367,6 +375,12 @@ const USER_CONFIG = {
   ],
 
   services: [
+    {
+      category: "Young Assistant Editor",
+      items: [
+        "2026-2029: Frontiers of Computer Science (FCS)",
+      ]
+    },
     {
       category: "Program Committee Member",
       items: [
