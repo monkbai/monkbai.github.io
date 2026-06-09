@@ -158,6 +158,36 @@ def render_action_links(publication: dict) -> str:
     return ''.join(actions)
 
 
+def select_featured_publications(publications: list[dict]) -> list[dict]:
+    featured = [publication for publication in publications if publication.get('featured')]
+    return featured or list(publications[:6])
+
+
+def render_publication_rows(publications: list[dict], cfg: dict) -> str:
+    rows: list[str] = []
+    previous_year = None
+    for publication in publications:
+        current_year = publication.get('year') or publication.get('date') or '--'
+        year_label = current_year if current_year != previous_year else '&nbsp;'
+        rows.append(
+            f'''
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">{year_label}</span>
+                        <span class="ls-col ls-name">
+                            <a href="{escape(paper_href(publication.get('links')))}" class="file-link{' no-paper-link' if paper_href(publication.get('links')) == '#' else ''}" target="_blank" rel="noopener noreferrer">{escape(publication.get('title') or 'Untitled')}</a>
+                            <span class="file-meta">
+                                <span class="file-authors">{format_authors(publication.get('authors', ''), cfg.get('name', ''))}</span>
+                                <span class="file-venue">{escape(publication.get('venue') or '')}</span>
+                                {f'<span class="file-note">{escape(publication.get("note"))}</span>' if publication.get('note') else ''}
+                            </span>
+                            <span class="file-actions">{render_action_links(publication)}</span>
+                        </span>
+                    </div>'''
+        )
+        previous_year = current_year
+    return ''.join(rows)
+
+
 def teaching_year(entry: str) -> str:
     years = re.findall(r'(?:19|20)\d{2}', str(entry))
     return years[-1] if years else '----'
@@ -234,22 +264,10 @@ def render_html(cfg: dict) -> str:
     ]
     experience_html = render_yaml_lines('\n'.join(experience_lines).splitlines())
 
-    publications_html = ''.join(
-        f'''
-                    <div class="ls-row">
-                        <span class="ls-col ls-date">{escape(publication.get('year') or publication.get('date') or '--')}</span>
-                        <span class="ls-col ls-name">
-                            <a href="{escape(paper_href(publication.get('links')))}" class="file-link{' no-paper-link' if paper_href(publication.get('links')) == '#' else ''}" target="_blank" rel="noopener noreferrer">{escape(publication.get('title') or 'Untitled')}</a>
-                            <span class="file-meta">
-                                <span class="file-authors">{format_authors(publication.get('authors', ''), cfg.get('name', ''))}</span>
-                                <span class="file-venue">{escape(publication.get('venue') or '')}</span>
-                                {f'<span class="file-note">{escape(publication.get("note"))}</span>' if publication.get('note') else ''}
-                            </span>
-                            <span class="file-actions">{render_action_links(publication)}</span>
-                        </span>
-                    </div>'''
-        for publication in cfg.get('publications', [])
-    )
+    publications = cfg.get('publications', [])
+    selected_publications = select_featured_publications(publications)
+    selected_publications_html = render_publication_rows(selected_publications, cfg)
+    publications_html = render_publication_rows(publications, cfg)
 
     news_html = ''.join(
         f'''
@@ -355,9 +373,9 @@ def render_html(cfg: dict) -> str:
                 <a href="#contact" class="terminal-tab" data-section="contact">~/contact</a>
                 <a href="#experience" class="terminal-tab" data-section="experience">~/exp</a>
                 <a href="#news" class="terminal-tab" data-section="news">~/news</a>
+                <a href="#publications" class="terminal-tab" data-section="publications">~/papers</a>
                 <a href="#services" class="terminal-tab" data-section="services">~/services</a>
                 <a href="#teaching" class="terminal-tab" data-section="teaching">~/teaching</a>
-                <a href="#publications" class="terminal-tab" data-section="publications">~/papers</a>
                 <a href="#honors" class="terminal-tab" data-section="honors">~/honors</a>
                 <a href="#misc" class="terminal-tab" data-section="misc">~/misc</a>
             </div>
@@ -442,6 +460,36 @@ def render_html(cfg: dict) -> str:
                 </div>
             </section>
 
+            <section id="publications" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~/papers</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">ls selected --sort=year --desc</span>
+                </div>
+                <div class="command-output" id="cfg-publications">
+                    <div class="publication-header">
+                        <div class="paper-summary">Selected publications ({len(selected_publications)})</div>
+                        <div class="paper-note" id="cfg-paper-note">{escape(cfg.get('paperNote') or '(* denotes corresponding author)')}</div>
+                    </div>
+                    <div class="ls-header">
+                        <span class="ls-col ls-date">year</span>
+                        <span class="ls-col ls-name">paper</span>
+                    </div>{selected_publications_html}
+                    <details class="publication-archive" id="full-publications">
+                        <summary class="publication-archive-toggle">
+                            <span>full list</span>
+                            <span class="publication-archive-meta">{len(publications)} entries</span>
+                        </summary>
+                        <div class="publication-archive-body">
+                            <div class="paper-summary" id="full-publication-list">Full publication list</div>
+                            <div class="ls-header">
+                                <span class="ls-col ls-date">year</span>
+                                <span class="ls-col ls-name">paper</span>
+                            </div>{publications_html}
+                        </div>
+                    </details>
+                </div>
+            </section>
+
             <section id="services" class="terminal-section">
                 <div class="command-line">
                     <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
@@ -457,20 +505,6 @@ def render_html(cfg: dict) -> str:
                     <span class="typed-cmd">cat ~/teaching.log</span>
                 </div>
                 <div class="command-output" id="cfg-teaching">{teaching_html}
-                </div>
-            </section>
-
-            <section id="publications" class="terminal-section">
-                <div class="command-line">
-                    <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~/papers</span><span class="prompt-char">$</span>
-                    <span class="typed-cmd">ls --sort=year --desc</span>
-                </div>
-                <div class="command-output" id="cfg-publications">
-                    <div class="paper-note" id="cfg-paper-note">{escape(cfg.get('paperNote') or '(* denotes corresponding author)')}</div>
-                    <div class="ls-header">
-                        <span class="ls-col ls-date">year</span>
-                        <span class="ls-col ls-name">paper</span>
-                    </div>{publications_html}
                 </div>
             </section>
 

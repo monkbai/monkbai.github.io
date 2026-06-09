@@ -19,12 +19,12 @@ const USER_CONFIG = {
     "His current research focuses on software reverse engineering and binary analysis, with broader interests in computer security and software engineering."
   ],
   recruitment: {
-    text: "I am looking for motivated students and collaborators in software security and software engineering. Feel free to email me if you are interested in working together!",
+    text: "I am looking for self-motivated students (Post-doc, PhD, Master, and Undergraduate) and collaborators in software security, AI, and software engineering. Feel free to email me if you are interested in working together.",
     // contact: "zhiboliu [at] nju [dot] edu [dot] cn",
     // contactHref: "mailto:zhiboliu@nju.edu.cn"
   },
   focus: ["Software Security", "AI Security", "Binary Analysis", "Reverse Engineering"],
-  latestUpdate: "March 2026",
+  latestUpdate: "June 2026",
   // photo: "https://monkbai.github.io/images/cyber-hacker-icon.png",
   photo: "pic/photo1.png",
   photoDark: "pic/photo2.png",
@@ -32,7 +32,7 @@ const USER_CONFIG = {
   stats: [
     { value: "30", label: "Publications" },
     { value: "2", label: "Distinguished Paper Awards" },
-    { value: "1", label: "Postdoctoral Fellowship" }
+    // { value: "1", label: "Postdoctoral Fellowship" }
   ],
 
   links: {
@@ -51,6 +51,7 @@ const USER_CONFIG = {
       venue: "ISSTA 2026",
       title: "The Unseen Delta: Characterizing the Compiler Optimization Landscape via Top-Down Differential Analysis",
       authors: "Zhibo Liu, and Huaijin Wang, and Shuai Wang.",
+      featured: true,
       links: {
       }
     },
@@ -59,6 +60,7 @@ const USER_CONFIG = {
       venue: "EuroSys 2026",
       title: "No More Translation at Runtime: LLM-Empowered Static Binary Translation",
       authors: "Zhibo Liu, Huaijin Wang, Wai Kin Wong, Daoyuan Wu, and Shuai Wang.",
+      featured: true,
       links: {
         paper: "https://doi.org/10.1145/3767295.3803600"
       }
@@ -77,6 +79,7 @@ const USER_CONFIG = {
       venue: "CCS 2025",
       title: "An Empirical Study Measuring In-The-Wild Cryptographic Microarchitectural Side-Channel Patches",
       authors: "Sen Deng, Zhibo Liu*, Shuai Wang, and Yinqian Zhang*.",
+      featured: true,
       links: {
         paper: "https://doi.org/10.1145/3719027.3744881"
       }
@@ -96,6 +99,7 @@ const USER_CONFIG = {
       venue: "ISSTA 2025",
       title: "DecLLM: LLM-Augmented Recompilable Decompilation for Enabling Programmatic Use of Decompiled Code",
       authors: "Wai Kin Wong, Daoyuan Wu*, Huaijin Wang, Zongjie Li, Zhibo Liu*, Shuai Wang*, Qiyi Tang, Sen Nie, and Shi Wu.",
+      featured: true,
       links: {
         paper: "https://doi.org/10.1145/3728958"
       },
@@ -106,6 +110,7 @@ const USER_CONFIG = {
       venue: "ICSE 2025",
       title: "Preserving Privacy in Software Composition Analysis: A Study of Technical Solutions and Enhancements",
       authors: "Huaijin Wang, Zhibo Liu*, Yanbo Dai, Shuai Wang, Qiyi Tang, Sen Nie, and Shi Wu.",
+      featured: true,
       links: {
         paper: "https://doi.org/10.1109/ICSE55347.2025.00055"
       }
@@ -124,6 +129,7 @@ const USER_CONFIG = {
       venue: "IEEE S&P 2025",
       title: "CipherSteal: Stealing Input Data from TEE-Shielded Neural Networks with Ciphertext Side Channels",
       authors: "Yuanyuan Yuan, Zhibo Liu, Sen Deng, Ynazuo Chen, Shuai Wang, Yinqian Zhang, and Zhendong Su.",
+      featured: true,
       links: {
         paper: "https://doi.org/10.1109/SP61157.2025.00079"
       },
@@ -134,6 +140,7 @@ const USER_CONFIG = {
       venue: "NDSS 2025",
       title: "MTZK: Testing and Exploring Bugs in Zero-Knowledge (ZK) Compilers",
       authors: "Dongwei Xiao, Zhibo Liu*, Yiteng Peng, and Shuai Wang*",
+      featured: true,
       links: {
         paper: "https://www.ndss-symposium.org/ndss-paper/mtzk-testing-and-exploring-bugs-in-zero-knowledge-zk-compilers/"
       }
@@ -170,6 +177,8 @@ const USER_CONFIG = {
       venue: "CCS 2024",
       title: "DeepCache: Revisiting Cache Side-Channel Attacks in Deep Neural Networks Executables",
       authors: "Zhibo Liu, Yuanyuan Yuan, Yanzuo Chen, Sihang Hu, Tianxiang Li, and Shuai Wang",
+      featured: true,
+      note: "🏅 Presented at Black Hat Europe 2024",
       links: {
         paper: "files/deepcache.pdf",
         fixed_paper: "files/deepcache.pdf"
@@ -189,6 +198,7 @@ const USER_CONFIG = {
       venue: "Euro S&P 2024",
       title: "Are We There Yet? Filling the Gap Between ML-Based Binary Similarity Analysis and Binary Software Composition Analysis",
       authors: "Huaijin Wang, Zhibo Liu*, Shuai Wang*, Ying Wang, Qiyi Tang, Sen Nie, Shi Wu",
+      featured: true,
       links: {
         paper: "https://ieeexplore.ieee.org/abstract/document/10629030"
       }
@@ -198,6 +208,7 @@ const USER_CONFIG = {
       venue: "FSE 2024",
       title: "DTD: Comprehensive and Scalable Testing for Debuggers",
       authors: "Hongyi Lu, Zhibo Liu*, Shuai Wang, and Fengwei Zhang*",
+      featured: true,
       links: {
         paper: "https://dl.acm.org/doi/10.1145/3643779"
       }
@@ -225,6 +236,7 @@ const USER_CONFIG = {
       venue: "ASE 2023",
       title: "PHYFU: Fuzzing Modern Physics Simulation Engines",
       authors: "Dongwei Xiao, Zhibo Liu, Shuai Wang.",
+      featured: true,
       links: {
         paper: "https://arxiv.org/abs/2307.10818"
       },
@@ -244,6 +256,7 @@ const USER_CONFIG = {
       venue: "ISSTA 2023",
       title: "Exploring Missed Optimizations in WebAssembly Optimizers",
       authors: "Zhibo Liu, Dongwei Xiao, Zongjie Li, Shuai Wang, Wei Meng.",
+      featured: true,
       links: {
         paper: "https://dl.acm.org/doi/10.1145/3597926.3598068",
         preprint: "files/issta23-ditwo.pdf"
@@ -282,13 +295,14 @@ const USER_CONFIG = {
       venue: "USENIX Security 2023",
       title: "Decompiling x86 Deep Neural Network Executables",
       authors: "Zhibo Liu, Yuanyuan Yuan, Shuai Wang, Xiaofei Xie, Lei Ma.",
+      featured: true,
       links: {
         paper: "files/sec23-btd-badges.pdf",
         extended: "https://arxiv.org/abs/2210.01075",
         code: "https://github.com/monkbai/DNN-decompiler"
       },
       starRepo: "monkbai/DNN-decompiler",
-      note: "🎉 Artifact badges: Available, Functional, Reproduced"
+      note: "🎉 Artifact badges: Available, Functional, Reproduced\n🏅 Presented at Black Hat USA 2023"
     },
     {
       year: 2022,
@@ -325,6 +339,7 @@ const USER_CONFIG = {
       venue: "IEEE S&P 2022",
       title: "SoK: Demystifying Binary Lifters Through the Lens of Downstream Applications",
       authors: "Zhibo Liu, Yuanyuan Yuan, Shuai Wang, Yuyan Bao.",
+      featured: true,
       links: {
         paper: "https://ieeexplore.ieee.org/document/9833799",
         artifact: "https://github.com/monkbai/ir_lifting_data"
@@ -344,6 +359,7 @@ const USER_CONFIG = {
       venue: "ISSTA 2020",
       title: "How far we have come: testing decompilation correctness of C decompilers",
       authors: "Zhibo Liu, Shuai Wang.",
+      featured: true,
       links: {
         paper: "https://dl.acm.org/doi/10.1145/3395363.3397370",
         code: "https://github.com/monkbai/DecFuzzer"
