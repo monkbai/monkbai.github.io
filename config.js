@@ -40,6 +40,7 @@ const USER_CONFIG = {
     cv: "files/CV-Zhibo_Liu.pdf",
     github: "https://github.com/monkbai",
     scholar: "https://scholar.google.com/citations?hl=en&user=kIsmHd4AAAAJ",
+    dblp: "https://dblp.org/pid/193/9286-1.html",
     orcid: "https://orcid.org/0000-0002-7872-1129"
   },
 

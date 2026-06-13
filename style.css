@@ -176,6 +176,18 @@ a:hover { text-decoration: underline; }
     position: relative;
 }
 
+.semantic-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: normal;
+    border: 0;
+}
+
 .scanline {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -281,6 +293,11 @@ a:hover { text-decoration: underline; }
     flex-direction: column;
     gap: 8px;
     margin-bottom: 16px;
+}
+
+.info-block dt,
+.info-block dd {
+    margin: 0;
 }
 
 .info-row {

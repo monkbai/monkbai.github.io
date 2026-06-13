@@ -139,6 +139,221 @@ def render_yaml_lines(lines: list[str]) -> str:
     return '\n'.join(rendered)
 
 
+def unique_nonempty(items: list[str]) -> list[str]:
+    values: list[str] = []
+    for item in items:
+        text = str(item or '').strip()
+        if text and text not in values:
+            values.append(text)
+    return values
+
+
+def join_human(items: list[str]) -> str:
+    values = unique_nonempty(items)
+    if not values:
+        return ''
+    if len(values) == 1:
+        return values[0]
+    if len(values) == 2:
+        return f'{values[0]} and {values[1]}'
+    return f'{", ".join(values[:-1])}, and {values[-1]}'
+
+
+def publication_has_paper_link(publication: dict) -> bool:
+    links = publication.get('links') or {}
+    return any(links.get(key) for key in ['paper', 'pdf', 'fixed_paper', 'preprint', 'artifact'])
+
+
+def extract_service_targets(items: list[str], limit: int) -> list[str]:
+    targets: list[str] = []
+    for item in items:
+        _, _, raw_targets = str(item or '').partition(':')
+        source = raw_targets or str(item or '')
+        for part in source.split(','):
+            text = part.strip()
+            if text and text not in targets:
+                targets.append(text)
+            if len(targets) >= limit:
+                return targets
+    return targets
+
+
+def normalize_service_item(item: str) -> str:
+    prefix, separator, suffix = str(item or '').partition(':')
+    if separator and prefix.strip() and suffix.strip():
+        return f'{suffix.strip()} ({prefix.strip()})'
+    return str(item or '').strip()
+
+
+def build_qualification_sentences(cfg: dict, publications: list[dict]) -> list[str]:
+    publication_count = len(publications)
+    venues = unique_nonempty([
+        publication.get('venue')
+        for publication in publications
+        if publication.get('venue') and publication_has_paper_link(publication)
+    ])
+    highlighted_venues = venues[:10]
+
+    honors = unique_nonempty([
+        item.get('text')
+        for item in cfg.get('honors', [])
+        if item.get('text')
+    ])
+    distinguished_honors = [item for item in honors if 'Distinguished Paper Award' in item]
+    support_honors = [
+        item for item in honors
+        if 'Postdoctoral Fellowship' in item or 'Dissertation Award' in item
+    ]
+
+    service_groups = {group.get('category'): group.get('items', []) for group in cfg.get('services', [])}
+    pc_items = service_groups.get('Program Committee Member', [])
+    reviewer_items = service_groups.get('Reviewer', [])
+    external_reviewer_items = service_groups.get('External Reviewer', [])
+    ae_items = service_groups.get('Artifact Evaluation Committee', [])
+
+    reviewer_targets = extract_service_targets(reviewer_items, 6)
+    external_targets = extract_service_targets(external_reviewer_items, 10)
+    ae_targets = extract_service_targets(ae_items, 6)
+
+    sentences: list[str] = []
+    sentences.append(
+        f'{cfg.get("displayName") or cfg.get("name") or "This researcher"} is documented on this page as an Associate Professor whose work spans software security, binary analysis, reverse engineering, and software engineering, with {publication_count} listed publications including papers at {join_human(highlighted_venues)}.'
+    )
+
+    recognition_parts = unique_nonempty(distinguished_honors + support_honors)
+    if recognition_parts:
+        sentences.append(
+            f'Documented recognitions include {join_human(recognition_parts)}.'
+        )
+
+    talk_items = [
+        item for item in honors
+        if 'Briefing Speaker' in item
+    ]
+    if talk_items:
+        sentences.append(
+            f'Public-facing research presentations listed on this page include {join_human(talk_items)}.'
+        )
+
+    service_parts: list[str] = []
+    if pc_items:
+        service_parts.append(
+            f'program committee service such as {join_human([normalize_service_item(item) for item in pc_items])}'
+        )
+    if reviewer_targets:
+        service_parts.append(f'journal reviewing for {join_human(reviewer_targets)}')
+    if external_targets:
+        service_parts.append(f'external reviewing for {join_human(external_targets)}')
+    if ae_targets:
+        service_parts.append(f'artifact evaluation service for {join_human(ae_targets)}')
+    if service_parts:
+        sentences.append(
+            'Documented community service includes ' + join_human(service_parts) + '. Based on the record listed on this page, these activities provide evidence relevant to roles such as conference program committee service, expert reviewing, and editorial assessment.'
+        )
+
+    return sentences
+
+
+def build_qualification_summary(cfg: dict, publications: list[dict]) -> str:
+    return ' '.join(build_qualification_sentences(cfg, publications))
+
+
+def render_semantic_link(label: str, href: str | None) -> str:
+    if not href:
+        return escape(label)
+    return f'<a href="{escape(href)}" target="_blank" rel="noopener noreferrer">{escape(label)}</a>'
+
+
+def render_semantic_contact(contact_pairs: list[tuple[str, str, str | None]]) -> str:
+    rows: list[str] = []
+    for key, value, href in contact_pairs:
+        rows.append(
+            '<div>'
+            f'<dt>{escape(key.replace("_", " ").title())}</dt>'
+            f'<dd>{render_semantic_link(value, href)}</dd>'
+            '</div>'
+        )
+    return '<dl>' + ''.join(rows) + '</dl>'
+
+
+def render_semantic_timeline(items: list[dict], primary_key: str) -> str:
+    entries: list[str] = []
+    for item in items:
+        entries.append(
+            '<li>'
+            f'<strong>{escape(item.get(primary_key) or "")}</strong>'
+            f' at {escape(item.get("institution") or "")}'
+            f' ({escape(item.get("period") or "")})'
+            '</li>'
+        )
+    return '<ul>' + ''.join(entries) + '</ul>' if entries else '<p>No entries listed.</p>'
+
+
+def render_semantic_publication_digest(publications: list[dict], limit: int = 5) -> str:
+    selected = select_featured_publications(publications)[:limit]
+    entries: list[str] = []
+    for publication in selected:
+        year = publication.get('year') or publication.get('date') or ''
+        title = publication.get('title') or 'Untitled'
+        primary_url = paper_href(publication.get('links'))
+        title_html = render_semantic_link(title, primary_url if primary_url != '#' else None)
+        venue = publication.get('venue') or ''
+        entries.append(
+            f'<li>{escape(str(year))} {escape(venue)}: {title_html}</li>'
+        )
+    return '<ul>' + ''.join(entries) + '</ul>' if entries else '<p>No representative publications listed.</p>'
+
+
+def render_semantic_profile_links(contact_pairs: list[tuple[str, str, str | None]]) -> str:
+    link_items = [
+        render_semantic_link(key.title(), href)
+        for key, _value, href in contact_pairs
+        if href and key in {'website', 'github', 'scholar', 'dblp', 'orcid', 'cv'}
+    ]
+    if not link_items:
+        return ''
+    return '<p>Profiles: ' + ', '.join(link_items) + '.</p>'
+
+
+def render_semantic_summary(cfg: dict, contact_pairs: list[tuple[str, str, str | None]], publications: list[dict]) -> str:
+    focus_html = ''.join(f'<li>{escape(item)}</li>' for item in cfg.get('focus', []))
+    qualification_sentences = build_qualification_sentences(cfg, publications)
+    qualification_html = ''.join(f'<p>{escape(sentence)}</p>' for sentence in qualification_sentences)
+    profile_links_html = render_semantic_profile_links(contact_pairs)
+    return f'''
+    <section class="semantic-only" aria-label="Machine-readable profile summary">
+        <section aria-labelledby="semantic-overview-title">
+            <h2 id="semantic-overview-title">Profile overview</h2>
+            <p>{escape(cfg.get('displayName') or cfg.get('name') or '')}</p>
+            <p>{escape(cfg.get('role') or '')}</p>
+            <p>{escape(cfg.get('university') or '')}</p>
+            <p>{escape(cfg.get('bio') or '')}</p>
+            <p>Location: {escape(cfg.get('location') or '')}. Email: {escape(cfg.get('email') or '')}.</p>
+            {profile_links_html}
+        </section>
+        <section aria-labelledby="semantic-qualification-title">
+            <h2 id="semantic-qualification-title">Qualification summary</h2>
+            {qualification_html}
+        </section>
+        <section aria-labelledby="semantic-focus-title">
+            <h2 id="semantic-focus-title">Research focus</h2>
+            <h3>Research focus</h3>
+            <ul>{focus_html}</ul>
+        </section>
+        <section aria-labelledby="semantic-career-title">
+            <h2 id="semantic-career-title">Career summary</h2>
+            <h3>Experience</h3>
+            {render_semantic_timeline(sort_near_to_far(cfg.get('experience')), 'role')}
+            <h3>Education</h3>
+            {render_semantic_timeline(sort_near_to_far(cfg.get('education')), 'degree')}
+        </section>
+        <section aria-labelledby="semantic-publication-digest-title">
+            <h2 id="semantic-publication-digest-title">Representative publications</h2>
+            {render_semantic_publication_digest(publications)}
+        </section>
+    </section>'''
+
+
 def render_action_links(publication: dict) -> str:
     links = publication.get('links') or {}
     actions = []
@@ -194,34 +409,67 @@ def teaching_year(entry: str) -> str:
 
 
 def build_schema(cfg: dict) -> str:
+    publications = cfg.get('publications', [])
+    representative_publications = select_featured_publications(publications)[:5]
+    qualification_summary = build_qualification_summary(cfg, publications)
     data = {
         '@context': 'https://schema.org',
         '@type': 'Person',
+        '@id': f'{cfg.get("links", {}).get("website") or "#"}#person',
         'name': cfg.get('displayName') or cfg.get('name'),
+        'alternateName': cfg.get('name'),
         'jobTitle': cfg.get('role'),
+        'description': qualification_summary,
         'affiliation': {
             '@type': 'Organization',
             'name': cfg.get('university'),
         },
+        'worksFor': {
+            '@type': 'Organization',
+            'name': cfg.get('university'),
+        },
+        'alumniOf': [
+            item.get('institution')
+            for item in cfg.get('education', [])
+            if item.get('institution')
+        ],
+        'knowsAbout': cfg.get('focus', []),
         'url': cfg.get('links', {}).get('website'),
         'sameAs': [
             value
             for value in [
                 cfg.get('links', {}).get('github'),
                 cfg.get('links', {}).get('scholar'),
+                cfg.get('links', {}).get('dblp'),
                 cfg.get('links', {}).get('orcid'),
             ]
             if value
         ],
+        'award': [
+            item.get('text')
+            for item in cfg.get('honors', [])
+            if item.get('text')
+        ],
         'address': cfg.get('address'),
+        'image': cfg.get('photo'),
+        'subjectOf': [
+            {
+                '@type': 'ScholarlyArticle',
+                'name': publication.get('title'),
+                'datePublished': str(publication.get('year') or publication.get('date') or ''),
+                'isPartOf': publication.get('venue'),
+                'url': paper_href(publication.get('links')),
+            }
+            for publication in representative_publications
+        ],
     }
-    return json.dumps(data, ensure_ascii=False, indent=2)
+    return json.dumps(data, ensure_ascii=False, separators=(',', ':'))
 
 
 def render_html(cfg: dict) -> str:
-    title = f"{str(cfg.get('name', 'academia')).lower().replace(' ', '_')}@academia ~ %"
+    title = f"{str(cfg.get('name', 'NJU')).lower().replace(' ', '_')}@NJU ~ %"
     description = cfg.get('bio') or 'Academic homepage'
-    prompt_text = cfg.get('promptLabel') or f"{str(cfg.get('name', 'visitor')).lower().replace(' ', '')}@academia"
+    prompt_text = cfg.get('promptLabel') or f"{str(cfg.get('name', 'visitor')).lower().replace(' ', '')}@NJU"
     display_name = cfg.get('displayName') or cfg.get('name') or 'Your Name'
     role_line = ' @ '.join(part for part in [cfg.get('role'), cfg.get('university')] if part)
     focus = ', '.join(f'<span class="hl">{escape(item)}</span>' for item in cfg.get('focus', []))
@@ -232,6 +480,7 @@ def render_html(cfg: dict) -> str:
 
     github_url = cfg.get('links', {}).get('github') or ''
     scholar_url = cfg.get('links', {}).get('scholar') or ''
+    dblp_url = cfg.get('links', {}).get('dblp') or ''
     orcid_url = cfg.get('links', {}).get('orcid') or ''
     cv_url = cfg.get('links', {}).get('cv') or ''
     website_url = cfg.get('links', {}).get('website') or ''
@@ -244,6 +493,7 @@ def render_html(cfg: dict) -> str:
         ('office', cfg.get('office') or '', None),
         ('github', display_url(github_url), github_url or None),
         ('scholar', display_url(scholar_url), scholar_url or None),
+        ('dblp', display_url(dblp_url), dblp_url or None),
         ('orcid', display_url(orcid_url), orcid_url or None),
         ('cv', display_url(cv_url), cv_url or None),
         ('website', display_url(website_url), website_url or None),
@@ -334,7 +584,8 @@ def render_html(cfg: dict) -> str:
     photo_light = escape(cfg.get('photo') or cfg.get('photoDark') or '')
     photo_dark = escape(cfg.get('photoDark') or cfg.get('photo') or '')
     photo_src = photo_light or photo_dark
-    schema_json = escape(build_schema(cfg))
+    schema_json = build_schema(cfg).replace('</', '<\\/')
+    semantic_summary_html = render_semantic_summary(cfg, contact_pairs, publications)
 
     return f'''<!DOCTYPE html>
 <html lang="en" data-theme="light">
@@ -361,6 +612,7 @@ def render_html(cfg: dict) -> str:
 <body>
     <!-- Generated from config.js by tools/render_static_page.py -->
     <a href="#about" class="skip-link">Skip to main content</a>
+    {semantic_summary_html}
     <div class="terminal-window">
         <div class="terminal-titlebar">
             <div class="terminal-dots">
@@ -368,7 +620,7 @@ def render_html(cfg: dict) -> str:
                 <span class="dot dot-yellow"></span>
                 <span class="dot dot-green"></span>
             </div>
-            <div class="terminal-tabs">
+            <nav class="terminal-tabs" aria-label="Section navigation">
                 <a href="#about" class="terminal-tab active" data-section="about">~/about</a>
                 <a href="#contact" class="terminal-tab" data-section="contact">~/contact</a>
                 <a href="#experience" class="terminal-tab" data-section="experience">~/exp</a>
@@ -378,7 +630,7 @@ def render_html(cfg: dict) -> str:
                 <a href="#teaching" class="terminal-tab" data-section="teaching">~/teaching</a>
                 <a href="#honors" class="terminal-tab" data-section="honors">~/honors</a>
                 <a href="#misc" class="terminal-tab" data-section="misc">~/misc</a>
-            </div>
+            </nav>
             <button type="button" class="terminal-theme-btn" id="themeToggle" aria-label="Toggle theme">
                 <span class="theme-indicator"></span>
             </button>
@@ -387,8 +639,9 @@ def render_html(cfg: dict) -> str:
         <main role="main" class="terminal-body">
             <div class="scanline"></div>
 
-            <section id="about" class="terminal-section">
-                <div class="command-line">
+            <section id="about" class="terminal-section" aria-labelledby="about-title">
+                <h2 id="about-title" class="semantic-only">About</h2>
+                <div class="command-line" aria-hidden="true">
                     <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd" data-cmd="whoami --verbose">whoami --verbose</span>
                 </div>
@@ -396,43 +649,44 @@ def render_html(cfg: dict) -> str:
                     <div class="hero-photo">
                         <img src="{photo_src}" alt="{escape((cfg.get('name') or 'Profile photo') + ' profile photo')}" loading="eager" decoding="async" data-photo-light="{photo_light}" data-photo-dark="{photo_dark}">
                     </div>
-                    <pre class="ascii-art">
+                    <pre class="ascii-art" aria-hidden="true">
  ______     _ _             _     _       
 |__  / |__ (_) |__   ___   | |   (_)_   _ 
   / /| '_ \| | '_ \ / _ \  | |   | | | | |
  / /_| | | | | |_) | (_) | | |___| | |_| |
 /____|_| |_|_|_.__/ \___/  |_____|_|\__,_|
                     </pre>
-                    <div class="nameplate" id="cfg-display-name">{escape(display_name)}</div>
-                    <div class="info-block">
+                    <h1 class="nameplate" id="cfg-display-name">{escape(display_name)}</h1>
+                    <dl class="info-block">
                         <div class="info-row">
-                            <span class="info-key">ROLE</span>
-                            <span class="info-val" id="cfg-role">{escape(role_line)}</span>
+                            <dt class="info-key">ROLE</dt>
+                            <dd class="info-val" id="cfg-role">{escape(role_line)}</dd>
                         </div>
                         <div class="info-row">
-                            <span class="info-key">LOCATION</span>
-                            <span class="info-val" id="cfg-location">{escape(cfg.get('location') or '')}</span>
+                            <dt class="info-key">LOCATION</dt>
+                            <dd class="info-val" id="cfg-location">{escape(cfg.get('location') or '')}</dd>
                         </div>
                         <div class="info-row">
-                            <span class="info-key">FOCUS</span>
-                            <span class="info-val" id="cfg-focus">{focus}</span>
+                            <dt class="info-key">FOCUS</dt>
+                            <dd class="info-val" id="cfg-focus">{focus}</dd>
                         </div>
                         <div class="info-row">
-                            <span class="info-key">STATS</span>
-                            <span class="info-val" id="cfg-stats">{stats}</span>
+                            <dt class="info-key">STATS</dt>
+                            <dd class="info-val" id="cfg-stats">{stats}</dd>
                         </div>
                         <div class="info-row">
-                            <span class="info-key">UPDATED</span>
-                            <span class="info-val" id="cfg-updated">{escape(cfg.get('latestUpdate') or '')}</span>
+                            <dt class="info-key">UPDATED</dt>
+                            <dd class="info-val" id="cfg-updated">{escape(cfg.get('latestUpdate') or '')}</dd>
                         </div>
-                    </div>
+                    </dl>
                     <div class="bio-block" id="cfg-bio">{about_html}</div>
                     {recruitment_html}
                 </div>
             </section>
 
-            <section id="contact" class="terminal-section">
-                <div class="command-line">
+            <section id="contact" class="terminal-section" aria-labelledby="contact-title">
+                <h2 id="contact-title" class="semantic-only">Contact</h2>
+                <div class="command-line" aria-hidden="true">
                     <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/contact.json | jq .</span>
                 </div>
@@ -441,8 +695,9 @@ def render_html(cfg: dict) -> str:
                 </div>
             </section>
 
-            <section id="news" class="terminal-section">
-                <div class="command-line">
+            <section id="news" class="terminal-section" aria-labelledby="news-title">
+                <h2 id="news-title" class="semantic-only">News</h2>
+                <div class="command-line" aria-hidden="true">
                     <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">tail -f ~/news.log</span>
                 </div>
@@ -450,8 +705,9 @@ def render_html(cfg: dict) -> str:
                 </div>
             </section>
 
-            <section id="experience" class="terminal-section">
-                <div class="command-line">
+            <section id="experience" class="terminal-section" aria-labelledby="experience-title">
+                <h2 id="experience-title" class="semantic-only">Experience and education</h2>
+                <div class="command-line" aria-hidden="true">
                     <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/experience.yml</span>
                 </div>
@@ -460,8 +716,9 @@ def render_html(cfg: dict) -> str:
                 </div>
             </section>
 
-            <section id="publications" class="terminal-section">
-                <div class="command-line">
+            <section id="publications" class="terminal-section" aria-labelledby="publications-title">
+                <h2 id="publications-title" class="semantic-only">Publications</h2>
+                <div class="command-line" aria-hidden="true">
                     <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~/papers</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">ls selected --sort=year --desc</span>
                 </div>
@@ -490,8 +747,9 @@ def render_html(cfg: dict) -> str:
                 </div>
             </section>
 
-            <section id="services" class="terminal-section">
-                <div class="command-line">
+            <section id="services" class="terminal-section" aria-labelledby="services-title">
+                <h2 id="services-title" class="semantic-only">Services</h2>
+                <div class="command-line" aria-hidden="true">
                     <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/services.md</span>
                 </div>
@@ -499,8 +757,9 @@ def render_html(cfg: dict) -> str:
                 </div>
             </section>
 
-            <section id="teaching" class="terminal-section">
-                <div class="command-line">
+            <section id="teaching" class="terminal-section" aria-labelledby="teaching-title">
+                <h2 id="teaching-title" class="semantic-only">Teaching</h2>
+                <div class="command-line" aria-hidden="true">
                     <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/teaching.log</span>
                 </div>
@@ -508,8 +767,9 @@ def render_html(cfg: dict) -> str:
                 </div>
             </section>
 
-            <section id="honors" class="terminal-section">
-                <div class="command-line">
+            <section id="honors" class="terminal-section" aria-labelledby="honors-title">
+                <h2 id="honors-title" class="semantic-only">Honors</h2>
+                <div class="command-line" aria-hidden="true">
                     <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/honors.log</span>
                 </div>
@@ -517,8 +777,9 @@ def render_html(cfg: dict) -> str:
                 </div>
             </section>
 
-            <section id="misc" class="terminal-section">
-                <div class="command-line">
+            <section id="misc" class="terminal-section" aria-labelledby="misc-title">
+                <h2 id="misc-title" class="semantic-only">Miscellaneous</h2>
+                <div class="command-line" aria-hidden="true">
                     <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">cat ~/misc.txt</span>
                 </div>
@@ -526,7 +787,7 @@ def render_html(cfg: dict) -> str:
                 </div>
             </section>
 
-            <div class="terminal-prompt-line">
+            <div class="terminal-prompt-line" aria-hidden="true">
                 <span class="prompt">{escape(prompt_text)}</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                 <span class="cursor">█</span>
             </div>
