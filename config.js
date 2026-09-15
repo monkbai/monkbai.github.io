@@ -19,7 +19,7 @@ const USER_CONFIG = {
     "His current research focuses on software reverse engineering and binary analysis, with broader interests in computer security and software engineering."
   ],
   recruitment: {
-    text: "I am looking for self-motivated students (Post-doc, PhD, Master, and Undergraduate) and collaborators in software security, AI, and software engineering. Feel free to email me if you are interested in working together.",
+    text: "I am looking for self-motivated students (PhD, Master, and Undergraduate) and collaborators in software security, AI, and software engineering. Feel free to email me if you are interested in working together.",
     // contact: "zhiboliu [at] nju [dot] edu [dot] cn",
     // contactHref: "mailto:zhiboliu@nju.edu.cn"
   },
