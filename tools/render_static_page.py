@@ -15,6 +15,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / 'config.js'
 INDEX_PATH = ROOT / 'index.html'
+VISITOR_TRACKER_PATH = ROOT / 'visitor-tracker.html'
 
 
 def escape(value: object) -> str:
@@ -45,6 +46,12 @@ process.stdout.write(configJson);
         raise SystemExit(exc.stderr.strip() or 'Failed to parse config.js.') from exc
 
     return json.loads(result.stdout)
+
+
+def load_visitor_tracker() -> str:
+    if not VISITOR_TRACKER_PATH.exists():
+        return '<!-- Add your MapMyVisitor snippet to visitor-tracker.html. -->'
+    return VISITOR_TRACKER_PATH.read_text(encoding='utf-8').strip()
 
 
 def display_url(url: str) -> str:
@@ -470,6 +477,7 @@ def render_html(cfg: dict) -> str:
     title = f"{str(cfg.get('name', 'NJU')).lower().replace(' ', '_')}@NJU ~ %"
     description = cfg.get('bio') or 'Academic homepage'
     prompt_text = cfg.get('promptLabel') or f"{str(cfg.get('name', 'visitor')).lower().replace(' ', '')}@NJU"
+    visitor_tracker_html = load_visitor_tracker()
     display_name = cfg.get('displayName') or cfg.get('name') or 'Your Name'
     role_line = ' @ '.join(part for part in [cfg.get('role'), cfg.get('university')] if part)
     focus = ', '.join(f'<span class="hl">{escape(item)}</span>' for item in cfg.get('focus', []))
@@ -792,12 +800,15 @@ def render_html(cfg: dict) -> str:
                 <span class="cursor">█</span>
             </div>
 
-            <div class="clustrmaps-controls">
-                <button type="button" class="clustrmaps-toggle" id="clustrmapsToggle" aria-controls="clustrmapsPanel" aria-expanded="false" data-map-src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs">
+            <div class="visitor-tracker-controls">
+                <button type="button" class="visitor-tracker-toggle" id="visitorTrackerToggle" aria-controls="visitorTrackerPanel" aria-expanded="false">
                     Show visitor map
                 </button>
             </div>
-            <div class="clustrmaps-container" id="clustrmapsPanel" hidden></div>
+            <div class="visitor-tracker" id="visitorTrackerPanel" aria-label="Visitor tracker" hidden></div>
+            <template id="visitorTrackerTemplate">
+                {visitor_tracker_html}
+            </template>
         </main>
     </div>
 

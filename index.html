@@ -951,12 +951,16 @@
                 <span class="cursor">█</span>
             </div>
 
-            <div class="clustrmaps-controls">
-                <button type="button" class="clustrmaps-toggle" id="clustrmapsToggle" aria-controls="clustrmapsPanel" aria-expanded="false" data-map-src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=Qma8wy7SwXxSesyratpVG16wwYImbiSR7vB7lYh6lDs">
+            <div class="visitor-tracker-controls">
+                <button type="button" class="visitor-tracker-toggle" id="visitorTrackerToggle" aria-controls="visitorTrackerPanel" aria-expanded="false">
                     Show visitor map
                 </button>
             </div>
-            <div class="clustrmaps-container" id="clustrmapsPanel" hidden></div>
+            <div class="visitor-tracker" id="visitorTrackerPanel" aria-label="Visitor tracker" hidden></div>
+            <template id="visitorTrackerTemplate">
+                <!-- Replace this file with the complete snippet copied from mapmyvisitor.com. -->
+<script type="text/javascript" id="mmvst_globe" src="https://mapmyvisitors.com/globe.js?d=crcvKNfoL2QtZ7C2_wuUM_sngEWMHuBt3sD2tpoXttI"></script>
+            </template>
         </main>
     </div>
 

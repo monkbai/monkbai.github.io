@@ -64,41 +64,39 @@ function initTabs() {
   sections.forEach((section) => observer.observe(section));
 }
 
-function loadClustrmaps(panel, toggle) {
-  if (panel.dataset.loaded === 'true') return;
+function initVisitorTrackerToggle() {
+  const toggle = document.getElementById('visitorTrackerToggle');
+  const panel = document.getElementById('visitorTrackerPanel');
+  const template = document.getElementById('visitorTrackerTemplate');
+  if (!toggle || !panel || !template) return;
 
-  const script = document.createElement('script');
-  script.id = 'clustrmaps';
-  script.src = toggle.dataset.mapSrc || '';
-  script.async = true;
-  panel.appendChild(script);
-  panel.dataset.loaded = 'true';
-}
+  function loadVisitorTracker() {
+    if (panel.dataset.loaded === 'true') return;
 
-function initClustrmapsToggle() {
-  const toggle = document.getElementById('clustrmapsToggle');
-  const panel = document.getElementById('clustrmapsPanel');
-  if (!toggle || !panel) return;
+    panel.append(template.content.cloneNode(true));
+    panel.querySelectorAll('script').forEach((sourceScript) => {
+      const script = document.createElement('script');
+      Array.from(sourceScript.attributes).forEach((attribute) => {
+        script.setAttribute(attribute.name, attribute.value);
+      });
+      script.textContent = sourceScript.textContent;
+      sourceScript.replaceWith(script);
+    });
 
-  const sync = () => {
-    const isOpen = !panel.hidden;
-    toggle.setAttribute('aria-expanded', String(isOpen));
-    toggle.textContent = isOpen ? 'Hide visitor map' : 'Show visitor map';
-  };
+    panel.dataset.loaded = 'true';
+  }
 
   toggle.addEventListener('click', () => {
     panel.hidden = !panel.hidden;
-    if (!panel.hidden) {
-      loadClustrmaps(panel, toggle);
-    }
-    sync();
+    const isOpen = !panel.hidden;
+    if (isOpen) loadVisitorTracker();
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.textContent = isOpen ? 'Hide visitor map' : 'Show visitor map';
   });
-
-  sync();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
   initTabs();
-  initClustrmapsToggle();
+  initVisitorTrackerToggle();
 });

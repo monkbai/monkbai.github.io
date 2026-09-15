@@ -668,11 +668,11 @@ a:hover { text-decoration: underline; }
     color: var(--accent);
 }
 
-.clustrmaps-controls {
+.visitor-tracker-controls {
     margin-top: 10px;
 }
 
-.clustrmaps-toggle {
+.visitor-tracker-toggle {
     background: none;
     border: 1px solid var(--border);
     color: var(--text-muted);
@@ -683,18 +683,13 @@ a:hover { text-decoration: underline; }
     transition: all 150ms;
 }
 
-.clustrmaps-toggle:hover {
+.visitor-tracker-toggle:hover {
     color: var(--accent);
     border-color: var(--accent);
 }
 
-.clustrmaps-container {
-    margin-top: 8px;
-    max-width: 320px;
-}
-
-.clustrmaps-container[hidden] {
-    display: none;
+.visitor-tracker {
+    margin-top: 2rem;
 }
 
 /* ---- Responsive ---- */
