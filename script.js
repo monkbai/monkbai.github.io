@@ -70,9 +70,22 @@ function initVisitorTrackerToggle() {
   const template = document.getElementById('visitorTrackerTemplate');
   if (!toggle || !panel || !template) return;
 
+  function resizeVisitorTracker() {
+    const widget = panel.querySelector('#mapmyvisitors-widget');
+    if (!widget) return;
+
+    const widgetWidth = widget.offsetWidth;
+    const scale = Math.min(1, panel.clientWidth / widgetWidth);
+    widget.style.transform = `scale(${scale})`;
+    widget.style.transformOrigin = 'top left';
+    panel.style.setProperty('--visitor-tracker-height', `${widget.offsetHeight * scale}px`);
+  }
+
   function loadVisitorTracker() {
     if (panel.dataset.loaded === 'true') return;
 
+    const observer = new MutationObserver(resizeVisitorTracker);
+    observer.observe(panel, { childList: true, subtree: true });
     panel.append(template.content.cloneNode(true));
     panel.querySelectorAll('script').forEach((sourceScript) => {
       const script = document.createElement('script');
@@ -83,16 +96,18 @@ function initVisitorTrackerToggle() {
       sourceScript.replaceWith(script);
     });
 
+    window.addEventListener('resize', resizeVisitorTracker);
     panel.dataset.loaded = 'true';
   }
 
   toggle.addEventListener('click', () => {
-    panel.hidden = !panel.hidden;
-    const isOpen = !panel.hidden;
-    if (isOpen) loadVisitorTracker();
+    const isOpen = panel.classList.toggle('is-open');
+    panel.setAttribute('aria-hidden', String(!isOpen));
     toggle.setAttribute('aria-expanded', String(isOpen));
     toggle.textContent = isOpen ? 'Hide visitor map' : 'Show visitor map';
   });
+
+  loadVisitorTracker();
 }
 
 document.addEventListener('DOMContentLoaded', () => {

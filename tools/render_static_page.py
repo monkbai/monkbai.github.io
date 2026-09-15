@@ -805,7 +805,7 @@ def render_html(cfg: dict) -> str:
                     Show visitor map
                 </button>
             </div>
-            <div class="visitor-tracker" id="visitorTrackerPanel" aria-label="Visitor tracker" hidden></div>
+            <div class="visitor-tracker" id="visitorTrackerPanel" aria-label="Visitor tracker" aria-hidden="true"></div>
             <template id="visitorTrackerTemplate">
                 {visitor_tracker_html}
             </template>
