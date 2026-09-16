@@ -30,7 +30,7 @@ const USER_CONFIG = {
   photoDark: "pic/photo2.png",
 
   stats: [
-    { value: "30", label: "Publications" },
+    { value: "31", label: "Publications" },
     { value: "2", label: "Distinguished Paper Awards" },
     // { value: "1", label: "Postdoctoral Fellowship" }
   ],
@@ -50,10 +50,20 @@ const USER_CONFIG = {
     {
       year: 2026,
       venue: "ISSTA 2026",
+      title: "BinRAG: An RAG-Based Decompilation Framework Fusing Name Prediction and Calling Context",
+      authors: "Wai Kin Wong, Daoyuan Wu*, Zhibo Liu*, Huaijin Wang, Zongjie Li, and Shuai Wang.",
+      featured: true,
+      links: {
+      }
+    },
+    {
+      year: 2026,
+      venue: "ISSTA 2026",
       title: "The Unseen Delta: Characterizing the Compiler Optimization Landscape via Top-Down Differential Analysis",
       authors: "Zhibo Liu, and Huaijin Wang, and Shuai Wang.",
       featured: true,
-      links: {
+      links: { 
+        paper: "https://arxiv.org/abs/2608.09530"
       }
     },
     {
@@ -360,7 +370,7 @@ const USER_CONFIG = {
       venue: "ISSTA 2020",
       title: "How far we have come: testing decompilation correctness of C decompilers",
       authors: "Zhibo Liu, Shuai Wang.",
-      featured: true,
+      // featured: true,
       links: {
         paper: "https://dl.acm.org/doi/10.1145/3395363.3397370",
         code: "https://github.com/monkbai/DecFuzzer"
@@ -401,6 +411,7 @@ const USER_CONFIG = {
     {
       category: "Program Committee Member",
       items: [
+        "2027: USENIX Security",
         "2026: CCS",
       ]
     },
